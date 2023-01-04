@@ -1,15 +1,16 @@
-.color-vector {
+.color-set {
   width: 220px;
   height: 100px;
   display: flex;
   flex-direction: column;
+  padding: 10px 0;
 }
 
-.color-vector__name {
+.color-set__name {
   font-size: 20px;
 }
 
-.color-vector__tech {
+.color-set__tech {
   background-image: linear-gradient(
     to right,
     #363533 0%,

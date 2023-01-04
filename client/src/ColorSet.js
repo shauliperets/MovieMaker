@@ -1,8 +1,17 @@
+import React from "react";
+
 function ColorSet(props) {
+  const [colorSet, setColorSet] = React.useState("");
+
+  React.useEffect(() => {
+    console.log(props.name);
+    setColorSet(props.name);
+  }, []);
+
   return (
-    <div className="color-vector">
-      <label className="color-vector__name">{props.name}</label>
-      <div className="color-vector__tech"></div>
+    <div className="color-set">
+      <label className="color-set__name">{colorSet}</label>
+      <div className="color-set__tech" onClick={() => props.onSelect(colorSet)}></div>
     </div>
   );
 }

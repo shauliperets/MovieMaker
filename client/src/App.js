@@ -19,6 +19,10 @@ function App() {
     setIsColorSetPopupOpen(false);
   }
 
+  function selectedColorSet(value) {
+    setSelectedSet(value);
+  }
+
   return (
     <div className="app">
       <main>
@@ -26,14 +30,14 @@ function App() {
         <Header></Header>
         <SelectLogo openPopup={openPopup} isOpen={isColorSetPopupOpen} selectSet={selectSet}></SelectLogo>
         <Popup isOpen={isColorSetPopupOpen} onClose={closePopup}>
-          <ColorSet name="Tech"></ColorSet>
-          <ColorSet name="Sunset"></ColorSet>
-          <ColorSet name="Solid"></ColorSet>
-          <ColorSet name="Retro"></ColorSet>
-          <ColorSet name="Lavender"></ColorSet>
-          <ColorSet name="Italia"></ColorSet>
-          <ColorSet name="Electronic"></ColorSet>
-          <ColorSet name="Cafe"></ColorSet>
+          <ColorSet name="Tech" onSelect={selectedColorSet}></ColorSet>
+          <ColorSet name="Sunset" onSelect={selectedColorSet}></ColorSet>
+          <ColorSet name="Solid" onSelect={selectedColorSet}></ColorSet>
+          <ColorSet name="Retro" onSelect={selectedColorSet}></ColorSet>
+          <ColorSet name="Lavender" onSelect={selectedColorSet}></ColorSet>
+          <ColorSet name="Italia" onSelect={selectedColorSet}></ColorSet>
+          <ColorSet name="Electronic" onSelect={selectedColorSet}></ColorSet>
+          <ColorSet name="Cafe" onSelect={selectedColorSet}></ColorSet>
         </Popup>
       </main>
       <footer class="footer"></footer>
