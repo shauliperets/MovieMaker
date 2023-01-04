@@ -1,0 +1,50 @@
+.select-logo__button {
+  width: 300px;
+  height: 120px;
+  font-size: 40px;
+  background: grey;
+  border-radius: 10px;
+  border: 0;
+  background-image: linear-gradient(
+      to right,
+      #3056ff 0%,
+      #3056ff 33%,
+      #000000 33%,
+      #000000 66%,
+      #871c1c 67%,
+      #871c1c 100%
+    ),
+    url(./images/arrow-down-4.png);
+  background-position: center bottom, right top;
+  background-size: 300px 80px, 80px 40px;
+  background-repeat: no-repeat, no-repeat;
+  padding: 0 0 0 0;
+}
+
+.select-logo__button:hover {
+  /*background-image: linear-gradient(-180deg, #1d95c9 0%, #17759c 100%);*/
+
+  /*background: rgb(194, 192, 192);*/
+  opacity: 0.7;
+}
+
+.select-logo__button_clicked {
+  opacity: 0.7;
+
+  background-image: linear-gradient(
+      to right,
+      #3056ff 0%,
+      #3056ff 33%,
+      #000000 33%,
+      #000000 66%,
+      #871c1c 67%,
+      #871c1c 100%
+    ),
+    url(./images/arrow-up-4.png);
+}
+
+.select-logo__name {
+  font-size: 30px;
+  width: 300px;
+  text-align: left;
+}
