@@ -5,7 +5,8 @@ function UploadFile(props) {
         בחר
       </label>
       <input id="upload-file__upload" className="upload-file__input" type="file" onChange={props.onChange}></input>
-      <img className="upload-file__preview" src={props.source}></img>
+
+      {props.logo}
     </div>
   );
 }

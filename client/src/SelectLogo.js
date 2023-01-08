@@ -17,9 +17,7 @@ function SelectLogo(props) {
         <button className="select-logo__upload-button" onClick={props.onLoadImage}></button>
       </div>
       <div class="select-logo__display">
-        <div className="select-logo__presentation">
-          <img className="select-logo__logo" src={props.source}></img>
-        </div>
+        <div className="select-logo__presentation">{props.logo}</div>
       </div>
     </div>
   );
