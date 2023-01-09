@@ -1,6 +1,11 @@
 .select-logo {
+  margin: 0 auto;
+  width: 1000px;
   display: flex;
   flex-direction: row;
+  border-right: 2px solid #737373;
+  border-left: 2px solid #737373;
+  padding: 10px;
 }
 
 .select-logo__buttons {
@@ -72,8 +77,10 @@
 }
 
 .select-logo__presentation {
+  display: flex;
+  flex-direction: column;
   border: 1px solid black;
-  width: 400px;
+  width: 670px;
   height: 300px;
 }
 
@@ -94,4 +101,14 @@
 
 .select-logo__logo {
   width: 100px;
+}
+
+.select-logo__display-product-name {
+  text-align: center;
+  font-size: 60px;
+}
+
+.select-logo__display-product-details {
+  text-align: center;
+  font-size: 30px;
 }

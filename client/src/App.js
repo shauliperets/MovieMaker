@@ -10,11 +10,13 @@ import UploadFile from "./UploadFile";
 
 function App() {
   const [isColorSetPopupOpen, setIsColorSetPopupOpen] = React.useState(false);
-  const [isLogoPopupOpen, setIsLogoPopupOpen] = React.useState(true);
+  const [isLogoPopupOpen, setIsLogoPopupOpen] = React.useState(false);
   const [selectSet, setSelectedSet] = React.useState("Tech");
   const [loadedImage, setLoadedImage] = React.useState("");
-  const [logo, setLogo] = React.useState(<img className="select-logo__logo" src={"./logo.png"}></img>);
-  const [popupLogo, setPopupLogo] = React.useState(<img className="popup__logo" src={"./logo.png"}></img>);
+  const [logo, setLogo] = React.useState(<img className="select-logo__logo" src="./logo.png"></img>);
+  const [popupLogo, setPopupLogo] = React.useState(<img className="popup__logo" src="./logo.png"></img>);
+  const [productName, setProductName] = React.useState("שם המוצר");
+  const [productDetails, setProductDetails] = React.useState("פרטים על המוצר");
 
   React.useEffect(() => {
     //document.querySelector(".select-logo__logo").src = "./images/logo.png";
@@ -55,6 +57,15 @@ function App() {
     setIsLogoPopupOpen(true);
   }
 
+  function updateProductName(value) {
+    setProductName(value);
+  }
+
+  function updateProductDetails(value) {
+    console.log("11value:", value);
+    setProductDetails(value);
+  }
+
   function uploadImage(event) {
     console.log("image load...");
     console.log(event.target.files[0]);
@@ -91,8 +102,12 @@ function App() {
           isOpen={isColorSetPopupOpen}
           selectSet={selectSet}
           onLoadImage={onLoadImageClick}
-          source={loadedImage}
+          source={loadedImage} //selet it
           logo={logo}
+          productName={productName}
+          productDetails={productDetails}
+          onProductChange={updateProductName}
+          onDetailsChange={updateProductDetails}
         ></SelectLogo>
         <Popup isOpen={isColorSetPopupOpen} onClose={closePopup}>
           <ColorSet name="Tech" onSelect={selectedColorSet}></ColorSet>
