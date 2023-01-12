@@ -7,6 +7,7 @@ import SelectLogo from "./SelectLogo";
 import Popup from "./Popup";
 import ColorSet from "./ColorSet";
 import UploadFile from "./UploadFile";
+import SlideOne from "./SlideOne";
 
 function App() {
   const [isColorSetPopupOpen, setIsColorSetPopupOpen] = React.useState(false);
@@ -109,6 +110,13 @@ function App() {
           onProductChange={updateProductName}
           onDetailsChange={updateProductDetails}
         ></SelectLogo>
+        <SlideOne
+          logo={logo}
+          productName={productName}
+          productDetails={productDetails}
+          onProductChange={updateProductName}
+          onDetailsChange={updateProductDetails}
+        ></SlideOne>
         <Popup isOpen={isColorSetPopupOpen} onClose={closePopup}>
           <ColorSet name="Tech" onSelect={selectedColorSet}></ColorSet>
           <ColorSet name="Sunset" onSelect={selectedColorSet}></ColorSet>
