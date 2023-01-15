@@ -89,3 +89,33 @@
   width: 500px;
   height: 300px;
 }
+
+.slide-one__logo {
+  width: 100px;
+}
+
+.slide-one__product-name {
+  font-size: 50px;
+  text-align: center;
+}
+
+.slide-one__product-details {
+  font-size: 30px;
+  text-align: center;
+}
+
+.slide-one__presentation-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.slide-one__presentation-body-text {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  word-wrap: break-word;
+}
+
+.slide-one__presentation-body-image {
+  width: 200px;
+}

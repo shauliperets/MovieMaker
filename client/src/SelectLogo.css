@@ -18,20 +18,7 @@
 .select-logo__buttons {
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
-}
-
-.select-logo__textbox {
-  border: 1px solid black;
-  font-size: 30px;
-  border-radius: 6px;
-}
-
-.select-logo__textbox-product-name {
-  margin-bottom: 20px;
-}
-
-.select-logo__display {
+  width: 580px;
 }
 
 .select-logo__colors-button {
@@ -92,8 +79,14 @@
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  width: 570px;
+  width: 500px;
   height: 300px;
+}
+
+.select-logo__product-image {
+  background-image: url(./images/cup.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
 }
 
 .select-logo__upload-button {

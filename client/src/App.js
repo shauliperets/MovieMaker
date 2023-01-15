@@ -12,10 +12,13 @@ import SlideOne from "./SlideOne";
 function App() {
   const [isColorSetPopupOpen, setIsColorSetPopupOpen] = React.useState(false);
   const [isLogoPopupOpen, setIsLogoPopupOpen] = React.useState(false);
+  const [isBackgroundPopupOpen, setIsBackgroundPopupOpen] = React.useState(false);
   const [selectSet, setSelectedSet] = React.useState("Tech");
   const [loadedImage, setLoadedImage] = React.useState("");
-  const [logo, setLogo] = React.useState(<img className="select-logo__logo" src="./logo.png"></img>);
-  const [popupLogo, setPopupLogo] = React.useState(<img className="popup__logo" src="./logo.png"></img>);
+  const [logo, setLogo] = React.useState(<img className="select-logo__logo" src="./logo.png"></img>); //delete
+  const [popupLogo, setPopupLogo] = React.useState(<img className="popup__logo" src="./logo.png"></img>); //delete
+  const [logoSource, setLogoSource] = React.useState("./logo.png");
+  const [backgroundSource, setBackgroundSource] = React.useState("./image-load.png");
   const [productName, setProductName] = React.useState("שם המוצר");
   const [productDetails, setProductDetails] = React.useState("פרטים על המוצר");
 
@@ -26,7 +29,7 @@ function App() {
     //getBlob().then((data) => console.log("blob data", data));
     //console.log("blob =>", getBlob());
     //const file = new File([getBlob()], "name");
-    //setLoadedImage(URL.createObjectURL(file));
+    //setLoadedImage(URL.createObjectURL(file));loadedImage
   }, []);
 
   /*function getBlob() {
@@ -48,14 +51,19 @@ function App() {
   function closePopup() {
     setIsColorSetPopupOpen(false);
     setIsLogoPopupOpen(false);
+    setIsBackgroundPopupOpen(false);
   }
 
   function selectedColorSet(value) {
     setSelectedSet(value);
   }
 
-  function onLoadImageClick() {
+  function openLogoPopup() {
     setIsLogoPopupOpen(true);
+  }
+
+  function openBackroundPopup() {
+    setIsBackgroundPopupOpen(true);
   }
 
   function updateProductName(value) {
@@ -67,7 +75,7 @@ function App() {
     setProductDetails(value);
   }
 
-  function uploadImage(event) {
+  function uploadLogo(event) {
     console.log("image load...");
     console.log(event.target.files[0]);
     console.log(event.target.files[0].name);
@@ -90,7 +98,17 @@ function App() {
     setLogo(<img className="select-logo__logo" src={URL.createObjectURL(file)}></img>);
     setPopupLogo(<img className="popup__logo" src={URL.createObjectURL(file)}></img>);
 
+    setLogoSource(URL.createObjectURL(file));
+
     closePopup();
+  }
+
+  function uploadBackground(event) {
+    const file = event.target.files[0];
+    setBackgroundSource(URL.createObjectURL(file));
+    closePopup();
+
+    //console.log("upload bakground");
   }
 
   return (
@@ -102,7 +120,8 @@ function App() {
           openPopup={openPopup}
           isOpen={isColorSetPopupOpen}
           selectSet={selectSet}
-          onLoadImage={onLoadImageClick}
+          //onLoadImage={onLoadImageClick}
+          onLoadClick={openLogoPopup}
           source={loadedImage} //selet it
           logo={logo}
           productName={productName}
@@ -112,8 +131,11 @@ function App() {
         ></SelectLogo>
         <SlideOne
           logo={logo}
+          logoSource={logoSource}
           productName={productName}
           productDetails={productDetails}
+          backgroundSource={backgroundSource}
+          onLoadClick={openBackroundPopup}
           onProductChange={updateProductName}
           onDetailsChange={updateProductDetails}
         ></SlideOne>
@@ -127,11 +149,14 @@ function App() {
           <ColorSet name="Electronic" onSelect={selectedColorSet}></ColorSet>
           <ColorSet name="Cafe" onSelect={selectedColorSet}></ColorSet>
         </Popup>
-        <Popup isOpen={isLogoPopupOpen} onClose={closePopup}>
-          <UploadFile onSubmit={closePopup} onChange={uploadImage} source={loadedImage} logo={popupLogo}></UploadFile>
+        <Popup name="upload-logo" isOpen={isLogoPopupOpen} onClose={closePopup}>
+          <UploadFile onChange={uploadLogo} source={loadedImage} logo={popupLogo}></UploadFile>
+        </Popup>
+        <Popup isOpen={isBackgroundPopupOpen} onClose={closePopup}>
+          <UploadFile name="upload-background" onChange={uploadBackground} source={backgroundSource}></UploadFile>
         </Popup>
       </main>
-      <footer class="footer"></footer>
+      <footer className="footer"></footer>
     </div>
   );
 }
