@@ -1,7 +1,9 @@
 .display {
   border: 1px solid black;
   width: 500px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e0e0;
 }
 
 .display__logo {
@@ -11,6 +13,7 @@
 .display__body {
   display: flex;
   flex-direction: row;
+  padding: 0 0 60px 0;
 }
 
 .display__details {
@@ -33,18 +36,28 @@
 }
 
 .display__product-price {
-  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .display__product-price-major {
   font-size: 60px;
-  border: 1px solid red;
+  padding: 0;
 }
 
 .display__product-price-minor {
-  font-size: 20px;
+  font-size: 30px;
+  padding: 0;
 }
 
 .display__image {
   width: 200px;
+}
+
+.display__notes {
+  padding: 3px 10px 30px 0;
+  border-top: 3px solid red;
+  background-color: black;
+  color: white;
 }

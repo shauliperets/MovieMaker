@@ -1,3 +1,5 @@
+import Display from "./Display";
+
 function SelectLogo(props) {
   return (
     <div className="select-logo">
@@ -17,13 +19,14 @@ function SelectLogo(props) {
         <button className="select-logo__upload-button" onClick={props.onLoadClick}></button>
       </div>
       <div className="select-logo__display">
-        <h2 className="select-logo__title">תצוגה מקדימה של צבעים</h2>
-        <div className="select-logo__presentation">
-          {props.logo}
-          <label className="select-logo__display-product-name">שם המוצר</label>
-          <label className="select-logo__display-product-details">פרטים על המוצר</label>
-        </div>
-        <label className="select-logo__display-product-details">פרטים על המוצר</label>
+        <Display
+          logoSource={props.logoSource}
+          productName="שם המוצר"
+          productDetails="פרטים על המוצר"
+          productPriceMajor="00"
+          productPriceMinor="00"
+          backgroundSource={props.backgroundSource}
+        ></Display>
       </div>
     </div>
   );

@@ -6,13 +6,14 @@ function Display(props) {
         <div className="display__details">
           <label className="display__product-name">{props.productName}</label>
           <label className="display__product-details">{props.productDetails}</label>
-          <div>
+          <div className="display__product-price">
             <label className="display__product-price-major">{props.productPriceMajor}</label>
             <label className="display__product-price-minor">{props.productPriceMinor}</label>
           </div>
         </div>
         <img className="display__image" src={props.backgroundSource}></img>
       </div>
+      <label className="display__notes">האותיות הקטנות</label>
     </div>
   );
 }

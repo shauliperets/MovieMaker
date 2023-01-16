@@ -44,13 +44,28 @@ function SlideOne(props) {
             </label>
           </div>
           <div className="slide-one__input-line">
-            <input className="slide-one__input slide-one__input_text" type="text"></input>
+            <input
+              className="slide-one__input slide-one__input_text"
+              type="text"
+              value={props.slideOneProductPriceMajor}
+              onChange={(event) => {
+                console.log("major price...");
+                props.onMajorPriceChange(event.target.value);
+              }}
+            ></input>
             <label className="slide-one__label" type="text">
               4
             </label>
           </div>
           <div className="slide-one__input-line">
-            <input className="slide-one__input slide-one__input_text" type="text"></input>
+            <input
+              className="slide-one__input slide-one__input_text"
+              type="text"
+              value={props.slideOneProductPriceMinor}
+              onChange={(event) => {
+                props.onMinorPriceChange(event.target.value);
+              }}
+            ></input>
             <label className="slide-one__label" type="text">
               2
             </label>
@@ -73,6 +88,8 @@ function SlideOne(props) {
           logoSource={props.logoSource}
           productName={props.productName}
           productDetails={props.productDetails}
+          productPriceMajor={props.productPriceMajor}
+          productPriceMinor={props.productPriceMinor}
           backgroundSource={props.backgroundSource}
           onLoadClick={props.openBackroundPopup}
           onProductChange={props.updateProductName}

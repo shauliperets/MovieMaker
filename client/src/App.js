@@ -22,8 +22,10 @@ function App() {
   const [backgroundSource, setBackgroundSource] = React.useState("./image-load.png");
   const [productName, setProductName] = React.useState("שם המוצר");
   const [productDetails, setProductDetails] = React.useState("פרטים על המוצר");
-  const [productPriceMajor, setProductPriceMajor] = React.useState("0");
-  const [productPriceMinor, setProductPriceMinor] = React.useState("00");
+  const [slideOneProductPriceMajor, setSlideOneProductPriceMajor] = React.useState("0");
+  const [slideOneProductPriceMinor, setSlideOneProductPriceMinor] = React.useState("00");
+  const [slideThreeProductPriceMajor, setSlideThreeProductPriceMajor] = React.useState("0");
+  const [slideThreeProductPriceMinor, setSlideThreeProductPriceMinor] = React.useState("00");
 
   React.useEffect(() => {
     //document.querySelector(".select-logo__logo").src = "./images/logo.png";
@@ -78,6 +80,22 @@ function App() {
     setProductDetails(value);
   }
 
+  function updateSlideOneProductPriceMajor(value) {
+    setSlideOneProductPriceMajor(value);
+  }
+
+  function updateSlideOneProductPriceMinor(value) {
+    setSlideOneProductPriceMinor(value);
+  }
+
+  function updateSlideThreeProductPriceMajor(value) {
+    setSlideThreeProductPriceMajor(value);
+  }
+
+  function updateSlideThreeProductPriceMinor(value) {
+    setSlideThreeProductPriceMinor(value);
+  }
+
   function uploadLogo(event) {
     console.log("image load...");
     console.log(event.target.files[0]);
@@ -126,9 +144,11 @@ function App() {
           //onLoadImage={onLoadImageClick}
           onLoadClick={openLogoPopup}
           source={loadedImage} //selet it
-          logo={logo}
+          logo={logo} //delete
+          logoSource={logoSource}
           productName={productName}
           productDetails={productDetails}
+          backgroundSource="./cup.png"
           onProductChange={updateProductName}
           onDetailsChange={updateProductDetails}
         ></SelectLogo>
@@ -137,23 +157,27 @@ function App() {
           logoSource={logoSource}
           productName={productName}
           productDetails={productDetails}
-          productPriceMajor={productPriceMajor}
-          productPriceMinor={productPriceMinor}
+          productPriceMajor={slideOneProductPriceMajor}
+          productPriceMinor={slideOneProductPriceMinor}
           backgroundSource={backgroundSource}
           onLoadClick={openBackroundPopup}
           onProductChange={updateProductName}
           onDetailsChange={updateProductDetails}
+          onMajorPriceChange={updateSlideOneProductPriceMajor}
+          onMinorPriceChange={updateSlideOneProductPriceMinor}
         ></SlideOne>
         <SlideThree
           logoSource={logoSource}
           productName={productName}
           productDetails={productDetails}
-          productPriceMajor={productPriceMajor}
-          productPriceMinor={productPriceMinor}
+          productPriceMajor={slideThreeProductPriceMajor}
+          productPriceMinor={slideThreeProductPriceMinor}
           backgroundSource={backgroundSource}
           onLoadClick={openBackroundPopup}
           onProductChange={updateProductName}
           onDetailsChange={updateProductDetails}
+          onMajorPriceChange={updateSlideThreeProductPriceMajor}
+          onMinorPriceChange={updateSlideThreeProductPriceMinor}
         ></SlideThree>
         <Popup isOpen={isColorSetPopupOpen} onClose={closePopup}>
           <ColorSet name="Tech" onSelect={selectedColorSet}></ColorSet>

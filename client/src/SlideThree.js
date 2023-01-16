@@ -42,13 +42,27 @@ function SlideThree(props) {
             </label>
           </div>
           <div className="slide-three__input-line">
-            <input className="slide-three__input slide-three__input_text" type="text"></input>
+            <input
+              className="slide-three__input slide-three__input_text"
+              type="text"
+              value={props.slideThreeProductPriceMajor}
+              onChange={(event) => {
+                props.onMajorPriceChange(event.target.value);
+              }}
+            ></input>
             <label className="slide-three__label" type="text">
               4
             </label>
           </div>
           <div className="slide-three__input-line">
-            <input className="slide-three__input slide-three__input_text" type="text"></input>
+            <input
+              className="slide-three__input slide-three__input_text"
+              type="text"
+              value={props.slideThreeProductPriceMinor}
+              onChange={(event) => {
+                props.onMinorPriceChange(event.target.value);
+              }}
+            ></input>
             <label className="slide-three__label" type="text">
               2
             </label>
