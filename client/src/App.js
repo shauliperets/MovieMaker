@@ -7,6 +7,7 @@ import SelectLogo from "./SelectLogo";
 import Popup from "./Popup";
 import ColorSet from "./ColorSet";
 import UploadFile from "./UploadFile";
+import Slide from "./Slide";
 import SlideOne from "./SlideOne";
 import SlideThree from "./SlideThree";
 
@@ -15,17 +16,21 @@ function App() {
   const [isLogoPopupOpen, setIsLogoPopupOpen] = React.useState(false);
   const [isBackgroundPopupOpen, setIsBackgroundPopupOpen] = React.useState(false);
   const [selectSet, setSelectedSet] = React.useState("Tech");
-  const [loadedImage, setLoadedImage] = React.useState("");
+  const [loadedImage, setLoadedImage] = React.useState(""); //delete
   const [logo, setLogo] = React.useState(<img className="select-logo__logo" src="./logo.png"></img>); //delete
   const [popupLogo, setPopupLogo] = React.useState(<img className="popup__logo" src="./logo.png"></img>); //delete
   const [logoSource, setLogoSource] = React.useState("./logo.png");
   const [backgroundSource, setBackgroundSource] = React.useState("./image-load.png");
-  const [productName, setProductName] = React.useState("שם המוצר");
-  const [productDetails, setProductDetails] = React.useState("פרטים על המוצר");
+  const [slideOneProductName, setSlideOneProductName] = React.useState("שם המוצר");
+  const [slideOneProductDetails, setSlideOneProductDetails] = React.useState("פרטים על המוצר");
   const [slideOneProductPriceMajor, setSlideOneProductPriceMajor] = React.useState("0");
   const [slideOneProductPriceMinor, setSlideOneProductPriceMinor] = React.useState("00");
+  const [slideOneNotes, setSlideOneNotes] = React.useState("האותיות הקטנות");
+  const [slideThreeProductName, setSlideThreeProductName] = React.useState("שם המוצר");
+  const [slideThreeProductDetails, setSlideThreeProductDetails] = React.useState("פרטים על המוצר");
   const [slideThreeProductPriceMajor, setSlideThreeProductPriceMajor] = React.useState("0");
   const [slideThreeProductPriceMinor, setSlideThreeProductPriceMinor] = React.useState("00");
+  const [slideThreeNotes, setSlideThreeNotes] = React.useState("האותיות הקטנות");
 
   React.useEffect(() => {
     //document.querySelector(".select-logo__logo").src = "./images/logo.png";
@@ -71,13 +76,12 @@ function App() {
     setIsBackgroundPopupOpen(true);
   }
 
-  function updateProductName(value) {
-    setProductName(value);
+  function updateSlideOneProductName(value) {
+    setSlideOneProductName(value);
   }
 
-  function updateProductDetails(value) {
-    console.log("11value:", value);
-    setProductDetails(value);
+  function updateSlideOneProductDetails(value) {
+    setSlideOneProductDetails(value);
   }
 
   function updateSlideOneProductPriceMajor(value) {
@@ -86,6 +90,22 @@ function App() {
 
   function updateSlideOneProductPriceMinor(value) {
     setSlideOneProductPriceMinor(value);
+  }
+
+  function updateSlideOneNotes(value) {
+    setSlideOneNotes(value);
+  }
+
+  function updateSlideThreeNotes(value) {
+    setSlideThreeNotes(value);
+  }
+
+  function updateSlideThreeProductName(value) {
+    setSlideThreeProductName(value);
+  }
+
+  function updateSlideThreeProductDetails(value) {
+    setSlideThreeProductDetails(value);
   }
 
   function updateSlideThreeProductPriceMajor(value) {
@@ -146,39 +166,44 @@ function App() {
           source={loadedImage} //selet it
           logo={logo} //delete
           logoSource={logoSource}
-          productName={productName}
-          productDetails={productDetails}
+          productName="שם המוצר"
+          productDetails="פרטים על המוצר"
           backgroundSource="./cup.png"
-          onProductChange={updateProductName}
-          onDetailsChange={updateProductDetails}
+          onProductChange={updateSlideOneProductName}
+          onDetailsChange={updateSlideOneProductDetails}
         ></SelectLogo>
-        <SlideOne
-          logo={logo}
+        <Slide
+          name="סלייד 1"
           logoSource={logoSource}
-          productName={productName}
-          productDetails={productDetails}
+          productName={slideOneProductName}
+          productDetails={slideOneProductDetails}
           productPriceMajor={slideOneProductPriceMajor}
           productPriceMinor={slideOneProductPriceMinor}
           backgroundSource={backgroundSource}
+          notes={slideOneNotes}
           onLoadClick={openBackroundPopup}
-          onProductChange={updateProductName}
-          onDetailsChange={updateProductDetails}
+          onProductChange={updateSlideOneProductName}
+          onDetailsChange={updateSlideOneProductDetails}
           onMajorPriceChange={updateSlideOneProductPriceMajor}
           onMinorPriceChange={updateSlideOneProductPriceMinor}
-        ></SlideOne>
-        <SlideThree
+          onNotesChange={updateSlideOneNotes}
+        ></Slide>
+        <Slide
+          name="סלייד 3"
           logoSource={logoSource}
-          productName={productName}
-          productDetails={productDetails}
+          productName={slideThreeProductName}
+          productDetails={slideThreeProductDetails}
           productPriceMajor={slideThreeProductPriceMajor}
           productPriceMinor={slideThreeProductPriceMinor}
           backgroundSource={backgroundSource}
+          notes={slideThreeNotes}
           onLoadClick={openBackroundPopup}
-          onProductChange={updateProductName}
-          onDetailsChange={updateProductDetails}
+          onProductChange={updateSlideThreeProductName}
+          onDetailsChange={updateSlideThreeProductDetails}
           onMajorPriceChange={updateSlideThreeProductPriceMajor}
           onMinorPriceChange={updateSlideThreeProductPriceMinor}
-        ></SlideThree>
+          onNotesChange={updateSlideThreeNotes}
+        ></Slide>
         <Popup isOpen={isColorSetPopupOpen} onClose={closePopup}>
           <ColorSet name="Tech" onSelect={selectedColorSet}></ColorSet>
           <ColorSet name="Sunset" onSelect={selectedColorSet}></ColorSet>
@@ -190,7 +215,7 @@ function App() {
           <ColorSet name="Cafe" onSelect={selectedColorSet}></ColorSet>
         </Popup>
         <Popup name="upload-logo" isOpen={isLogoPopupOpen} onClose={closePopup}>
-          <UploadFile onChange={uploadLogo} source={loadedImage} logo={popupLogo}></UploadFile>
+          <UploadFile onChange={uploadLogo} source={logoSource} logo={popupLogo}></UploadFile>
         </Popup>
         <Popup isOpen={isBackgroundPopupOpen} onClose={closePopup}>
           <UploadFile name="upload-background" onChange={uploadBackground} source={backgroundSource}></UploadFile>

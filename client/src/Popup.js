@@ -8,12 +8,10 @@ function Popup(props) {
   const [cancelImageSource, setCancelImageSource] = React.useState(cancelImage);
 
   function onCancelHover() {
-    console.log("hover");
     setCancelImageSource(cancelImageHover);
   }
 
   function onCancelLeave() {
-    console.log("leave");
     setCancelImageSource(cancelImage);
   }
 

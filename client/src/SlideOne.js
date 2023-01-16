@@ -47,7 +47,7 @@ function SlideOne(props) {
             <input
               className="slide-one__input slide-one__input_text"
               type="text"
-              value={props.slideOneProductPriceMajor}
+              value={props.productPriceMajor}
               onChange={(event) => {
                 console.log("major price...");
                 props.onMajorPriceChange(event.target.value);
@@ -61,7 +61,7 @@ function SlideOne(props) {
             <input
               className="slide-one__input slide-one__input_text"
               type="text"
-              value={props.slideOneProductPriceMinor}
+              value={props.productPriceMinor}
               onChange={(event) => {
                 props.onMinorPriceChange(event.target.value);
               }}
@@ -76,6 +76,10 @@ function SlideOne(props) {
               cols="10"
               rows="10"
               className="slide-one__input slide-one__input_textarea"
+              value={props.notes}
+              onChange={(event) => {
+                props.onNotesChange(event.target.value);
+              }}
             ></textarea>
             <label className="slide-one__label" type="text">
               50

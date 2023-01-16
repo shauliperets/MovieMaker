@@ -13,7 +13,7 @@ function Display(props) {
         </div>
         <img className="display__image" src={props.backgroundSource}></img>
       </div>
-      <label className="display__notes">האותיות הקטנות</label>
+      <label className="display__notes">{props.notes}</label>
     </div>
   );
 }
