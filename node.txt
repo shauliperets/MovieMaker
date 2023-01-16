@@ -1,4 +1,0 @@
-
-root> npx create-react-app client
-root> npx express-generator api
-client> npm install
