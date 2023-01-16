@@ -23,6 +23,7 @@ function SelectLogo(props) {
           <label className="select-logo__display-product-name">שם המוצר</label>
           <label className="select-logo__display-product-details">פרטים על המוצר</label>
         </div>
+        <label className="select-logo__display-product-details">פרטים על המוצר</label>
       </div>
     </div>
   );

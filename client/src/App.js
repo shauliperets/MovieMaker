@@ -8,6 +8,7 @@ import Popup from "./Popup";
 import ColorSet from "./ColorSet";
 import UploadFile from "./UploadFile";
 import SlideOne from "./SlideOne";
+import SlideThree from "./SlideThree";
 
 function App() {
   const [isColorSetPopupOpen, setIsColorSetPopupOpen] = React.useState(false);
@@ -21,6 +22,8 @@ function App() {
   const [backgroundSource, setBackgroundSource] = React.useState("./image-load.png");
   const [productName, setProductName] = React.useState("שם המוצר");
   const [productDetails, setProductDetails] = React.useState("פרטים על המוצר");
+  const [productPriceMajor, setProductPriceMajor] = React.useState("0");
+  const [productPriceMinor, setProductPriceMinor] = React.useState("00");
 
   React.useEffect(() => {
     //document.querySelector(".select-logo__logo").src = "./images/logo.png";
@@ -134,11 +137,24 @@ function App() {
           logoSource={logoSource}
           productName={productName}
           productDetails={productDetails}
+          productPriceMajor={productPriceMajor}
+          productPriceMinor={productPriceMinor}
           backgroundSource={backgroundSource}
           onLoadClick={openBackroundPopup}
           onProductChange={updateProductName}
           onDetailsChange={updateProductDetails}
         ></SlideOne>
+        <SlideThree
+          logoSource={logoSource}
+          productName={productName}
+          productDetails={productDetails}
+          productPriceMajor={productPriceMajor}
+          productPriceMinor={productPriceMinor}
+          backgroundSource={backgroundSource}
+          onLoadClick={openBackroundPopup}
+          onProductChange={updateProductName}
+          onDetailsChange={updateProductDetails}
+        ></SlideThree>
         <Popup isOpen={isColorSetPopupOpen} onClose={closePopup}>
           <ColorSet name="Tech" onSelect={selectedColorSet}></ColorSet>
           <ColorSet name="Sunset" onSelect={selectedColorSet}></ColorSet>

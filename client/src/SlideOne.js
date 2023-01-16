@@ -1,4 +1,5 @@
 import slideOneDropdown from "./images/slide-1-dropdown.jpg";
+import Display from "./Display";
 
 function SlideOne(props) {
   return (
@@ -68,18 +69,15 @@ function SlideOne(props) {
         </div>
       </div>
       <div className="slide-one__display">
-        <div className="slide-one__presentation">
-          <div className="slide-one__presentation-header">
-            <img className="slide-one__logo" src={props.logoSource}></img>
-          </div>
-          <div className="slide-one__presentation-body">
-            <div className="slide-one__presentation-body-text">
-              <label className="slide-one__product-name">{props.productName}</label>
-              <label className="slide-one__product-details">{props.productDetails}</label>
-            </div>
-            <img className="slide-one__presentation-body-image" src={props.backgroundSource}></img>
-          </div>
-        </div>
+        <Display
+          logoSource={props.logoSource}
+          productName={props.productName}
+          productDetails={props.productDetails}
+          backgroundSource={props.backgroundSource}
+          onLoadClick={props.openBackroundPopup}
+          onProductChange={props.updateProductName}
+          onDetailsChange={props.updateProductDetails}
+        ></Display>
       </div>
     </div>
   );

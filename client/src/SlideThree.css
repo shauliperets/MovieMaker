@@ -1,0 +1,84 @@
+.slide-three {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 1100px;
+  border-top: 2px solid #737373;
+  border-right: 2px solid #737373;
+  border-left: 2px solid #737373;
+  padding: 20px 10px 10px 10px;
+}
+
+.slide-three__sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+}
+
+.slide-three__title {
+  color: #cfa865;
+  font-size: 30px;
+  padding: 0 0 30px 0;
+  margin: 0;
+}
+
+.slide-three__load-image-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.slide-three__button {
+  border-radius: 10px;
+  width: 230px;
+  height: 80px;
+  background-color: #e3bc77;
+  border: 1px solid black;
+  color: white;
+  font-size: 30px;
+}
+
+.slide-three__button:hover {
+  opacity: 0.7;
+}
+
+.slide-three__inputs {
+  padding: 10px 0 0 0;
+}
+
+.slide-three__input-line {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0 0 10px 0;
+}
+
+.slide-three__input {
+  font-size: 30px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.slide-three__input_text {
+  width: 200px;
+}
+
+.slide-three__input_textarea {
+  width: 400px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.slide-three__label {
+  font-size: 30px;
+  border-radius: 6px;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #6aaf5f;
+}
+
+.slide-three__display {
+  padding: 70px 0 0 0;
+}
