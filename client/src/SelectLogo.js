@@ -26,6 +26,7 @@ function SelectLogo(props) {
           productPriceMajor="00"
           productPriceMinor="00"
           backgroundSource={props.backgroundSource}
+          notes="האותיות הקטנות"
         ></Display>
       </div>
     </div>

@@ -10,6 +10,7 @@ import UploadFile from "./UploadFile";
 import Slide from "./Slide";
 import SlideOne from "./SlideOne";
 import SlideThree from "./SlideThree";
+import SlideProductPrice from "./SlideProductPrice";
 
 function App() {
   const [isColorSetPopupOpen, setIsColorSetPopupOpen] = React.useState(false);
@@ -32,7 +33,21 @@ function App() {
   const [slideThreeProductPriceMinor, setSlideThreeProductPriceMinor] = React.useState("00");
   const [slideThreeNotes, setSlideThreeNotes] = React.useState("האותיות הקטנות");
 
+  const [slides, setSlides] = React.useState([]);
+
+  function onSelectedSlide(name) {
+    console.log("slide added: ", name);
+    const updateSlides = [...slides];
+    updateSlides.push({ name: name });
+    setSlides(updateSlides);
+    console.log("slides: ", slides);
+  }
+
   React.useEffect(() => {
+    console.log("on load sildes", slides);
+    //setSlides([]);
+    //addSlide("my name111");
+    //console.log(slides);
     //document.querySelector(".select-logo__logo").src = "./images/logo.png";
     //URL.createObjectURL("./images/logo.png");
     //new FileReader()
@@ -152,6 +167,10 @@ function App() {
     //console.log("upload bakground");
   }
 
+  function selectSlide(name) {
+    console.log("Slide name: ", name);
+  }
+
   return (
     <div className="app">
       <main>
@@ -172,38 +191,51 @@ function App() {
           onProductChange={updateSlideOneProductName}
           onDetailsChange={updateSlideOneProductDetails}
         ></SelectLogo>
-        <Slide
-          name="סלייד 1"
-          logoSource={logoSource}
-          productName={slideOneProductName}
-          productDetails={slideOneProductDetails}
-          productPriceMajor={slideOneProductPriceMajor}
-          productPriceMinor={slideOneProductPriceMinor}
-          backgroundSource={backgroundSource}
-          notes={slideOneNotes}
-          onLoadClick={openBackroundPopup}
-          onProductChange={updateSlideOneProductName}
-          onDetailsChange={updateSlideOneProductDetails}
-          onMajorPriceChange={updateSlideOneProductPriceMajor}
-          onMinorPriceChange={updateSlideOneProductPriceMinor}
-          onNotesChange={updateSlideOneNotes}
-        ></Slide>
-        <Slide
-          name="סלייד 3"
-          logoSource={logoSource}
-          productName={slideThreeProductName}
-          productDetails={slideThreeProductDetails}
-          productPriceMajor={slideThreeProductPriceMajor}
-          productPriceMinor={slideThreeProductPriceMinor}
-          backgroundSource={backgroundSource}
-          notes={slideThreeNotes}
-          onLoadClick={openBackroundPopup}
-          onProductChange={updateSlideThreeProductName}
-          onDetailsChange={updateSlideThreeProductDetails}
-          onMajorPriceChange={updateSlideThreeProductPriceMajor}
-          onMinorPriceChange={updateSlideThreeProductPriceMinor}
-          onNotesChange={updateSlideThreeNotes}
-        ></Slide>
+
+        <div className="app__slides">
+          {slides.map((element, index) => (
+            <Slide key={"slide-" + index} onSelectedSlideClick={onSelectedSlide}>
+              <SlideProductPrice
+                name={element.name}
+                key={"product-price-slide-" + index}
+                logoSource={logoSource}
+                productName={slideOneProductName}
+                productDetails={slideOneProductDetails}
+                productPriceMajor={slideOneProductPriceMajor}
+                productPriceMinor={slideOneProductPriceMinor}
+                backgroundSource={backgroundSource}
+                notes={slideOneNotes}
+                onLoadClick={openBackroundPopup}
+                onProductChange={updateSlideOneProductName}
+                onDetailsChange={updateSlideOneProductDetails}
+                onMajorPriceChange={updateSlideOneProductPriceMajor}
+                onMinorPriceChange={updateSlideOneProductPriceMinor}
+                onNotesChange={updateSlideOneNotes}
+              ></SlideProductPrice>
+            </Slide>
+          ))}
+        </div>
+
+        <Slide key={"1234567890"} onSelectedSlideClick={onSelectedSlide}>
+          <SlideProductPrice
+            key={"wertyui"}
+            name="סלייד מחיר"
+            logoSource={logoSource}
+            productName={slideOneProductName}
+            productDetails={slideOneProductDetails}
+            productPriceMajor={slideOneProductPriceMajor}
+            productPriceMinor={slideOneProductPriceMinor}
+            backgroundSource={backgroundSource}
+            notes={slideOneNotes}
+            onLoadClick={openBackroundPopup}
+            onProductChange={updateSlideOneProductName}
+            onDetailsChange={updateSlideOneProductDetails}
+            onMajorPriceChange={updateSlideOneProductPriceMajor}
+            onMinorPriceChange={updateSlideOneProductPriceMinor}
+            onNotesChange={updateSlideOneNotes}
+          ></SlideProductPrice>
+        </Slide>
+
         <Popup isOpen={isColorSetPopupOpen} onClose={closePopup}>
           <ColorSet name="Tech" onSelect={selectedColorSet}></ColorSet>
           <ColorSet name="Sunset" onSelect={selectedColorSet}></ColorSet>

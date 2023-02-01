@@ -6,6 +6,7 @@
 @import url(ColorSet.css);
 @import url(UploadFile.css);
 @import url(Slide.css);
-@import url(SlideOne.css);
-@import url(SlideThree.css);
+@import url(SlideProductPrice.css);
+@import url(SlideOne.css); /*delete*/
+@import url(SlideThree.css); /*delete*/
 @import url(Display.css);
