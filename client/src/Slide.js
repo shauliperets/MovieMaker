@@ -9,9 +9,15 @@ import productTitleSlideImage from "./images/product-title-slide.jpg";
 function Slide(props) {
   return (
     <div className="slide">
+      <div className="slide__title">{props.name}</div>
       {props.children}
       <div className="slide__toolbar">
-        <button className="slide__toolbar-button" onClick={props.onAddSlideClick}>
+        <button
+          className="slide__toolbar-button"
+          onClick={props.onAddSlideClick}
+          onMouseEnter={props.onAddSlideMouseEnter}
+          onMouseLeave={props.onAddSlideMouseLeave}
+        >
           <img className="slide__toolbar-image" src={plusImage} alt="Add slide image"></img>
         </button>
         <button className="slide__toolbar-button" onClick={props.moveSlideUp}>
@@ -21,7 +27,11 @@ function Slide(props) {
           <img src={moveDownImage} className="slide__toolbar-image" alt="Move down image"></img>
         </button>
       </div>
-      <div className="slide__float-menu">
+      <div
+        className={props.isAddSlideMenuVisible ? "slide__float-menu slide__float-menu_show" : "slide__float-menu"}
+        onMouseEnter={props.onAddSlideMouseEnter}
+        onMouseLeave={props.onAddSlideMouseLeave}
+      >
         <button
           onClick={() => {
             props.onSelectedSlideClick("product-price");

@@ -12,6 +12,9 @@ import SlideOne from "./SlideOne";
 import SlideThree from "./SlideThree";
 import SlideProductPrice from "./SlideProductPrice";
 
+// 1. Add route
+// 2. Use Suspense for lazy loading. Link - https://linguinecode.com/post/code-splitting-react-router-with-react-lazy-and-react-suspense#:~:text=Step%203%3A%20Use%20React%20Suspense%20component
+
 function App() {
   const [isColorSetPopupOpen, setIsColorSetPopupOpen] = React.useState(false);
   const [isLogoPopupOpen, setIsLogoPopupOpen] = React.useState(false);
@@ -22,6 +25,9 @@ function App() {
   const [popupLogo, setPopupLogo] = React.useState(<img className="popup__logo" src="./logo.png"></img>); //delete
   const [logoSource, setLogoSource] = React.useState("./logo.png");
   const [backgroundSource, setBackgroundSource] = React.useState("./image-load.png");
+
+  const [isAddSlideMenuVisible, setIsAddSlideMenuVisible] = React.useState(false);
+
   const [slideOneProductName, setSlideOneProductName] = React.useState("שם המוצר");
   const [slideOneProductDetails, setSlideOneProductDetails] = React.useState("פרטים על המוצר");
   const [slideOneProductPriceMajor, setSlideOneProductPriceMajor] = React.useState("0");
@@ -35,12 +41,35 @@ function App() {
 
   const [slides, setSlides] = React.useState([]);
 
-  function onSelectedSlide(name) {
-    console.log("slide added: ", name);
-    const updateSlides = [...slides];
+  function onSelectedSlide(id) {
+    console.log("slide added: ", id);
+    console.log("slide added array: ", [...slides]);
+
+    /*let updateSlides = [...slides];
     updateSlides.push({ name: name });
-    setSlides(updateSlides);
-    console.log("slides: ", slides);
+    setSlides(updateSlides);*/
+
+    setSlides([...slides, getSlideDetails(id)]);
+
+    //console.log("slides: ", slides);
+  }
+
+  function getSlideDetails(id) {
+    if (id === "product-price") {
+      return { id: id, name: "כרטיסיית מחיר" };
+    } else {
+      return { id: id, name: "כרטיסיית מוצר" };
+    }
+  }
+
+  function onAddSlideMouseEnter() {
+    console.log("On Mouse enter");
+    setIsAddSlideMenuVisible(true);
+  }
+
+  function onAddSlideMouseLeave() {
+    console.log("On Mouse leave");
+    setIsAddSlideMenuVisible(false);
   }
 
   React.useEffect(() => {
@@ -55,7 +84,7 @@ function App() {
     //console.log("blob =>", getBlob());
     //const file = new File([getBlob()], "name");
     //setLoadedImage(URL.createObjectURL(file));loadedImage
-  }, []);
+  }, [slides]);
 
   /*function getBlob() {
     return fetch("./logo.png")
@@ -192,12 +221,27 @@ function App() {
           onDetailsChange={updateSlideOneProductDetails}
         ></SelectLogo>
 
+        <Slide
+          key={"slide-0"}
+          name="ראשי"
+          onSelectedSlideClick={onSelectedSlide}
+          onAddSlideMouseEnter={onAddSlideMouseEnter}
+          onAddSlideMouseLeave={onAddSlideMouseLeave}
+          isAddSlideMenuVisible={isAddSlideMenuVisible}
+        ></Slide>
+
         <div className="app__slides">
           {slides.map((element, index) => (
-            <Slide key={"slide-" + index} onSelectedSlideClick={onSelectedSlide}>
+            <Slide
+              key={"slide-" + index}
+              name={element.name}
+              onSelectedSlideClick={onSelectedSlide}
+              onAddSlideMouseEnter={onAddSlideMouseEnter}
+              onAddSlideMouseLeave={onAddSlideMouseLeave}
+              isAddSlideMenuVisible={isAddSlideMenuVisible}
+            >
               <SlideProductPrice
-                name={element.name}
-                key={"product-price-slide-" + index}
+                key={"product-price-slide-" + index} //remove index from key - put id from DB
                 logoSource={logoSource}
                 productName={slideOneProductName}
                 productDetails={slideOneProductDetails}
@@ -216,7 +260,7 @@ function App() {
           ))}
         </div>
 
-        <Slide key={"1234567890"} onSelectedSlideClick={onSelectedSlide}>
+        {/*<Slide key={"1234567890"} onSelectedSlideClick={onSelectedSlide}>
           <SlideProductPrice
             key={"wertyui"}
             name="סלייד מחיר"
@@ -234,7 +278,7 @@ function App() {
             onMinorPriceChange={updateSlideOneProductPriceMinor}
             onNotesChange={updateSlideOneNotes}
           ></SlideProductPrice>
-        </Slide>
+        </Slide>*/}
 
         <Popup isOpen={isColorSetPopupOpen} onClose={closePopup}>
           <ColorSet name="Tech" onSelect={selectedColorSet}></ColorSet>
