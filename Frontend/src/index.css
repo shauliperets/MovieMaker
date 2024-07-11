@@ -1,0 +1,12 @@
+@import url(./Components/Header.css);
+@import url(./Components/App.css);
+@import url(./Components/Logo/Logo.css);
+@import url(./Components/SelectLogo/SelectLogo.css);
+@import url(./Components/Popup.css);
+@import url(./Components/ColorSet/ColorSet.css);
+@import url(./Components/UploadFile.css);
+@import url(./Components/Slide.css);
+@import url(./Components/SlideProductPrice.css);
+@import url(./Components/SlideOne.css); /*delete*/
+@import url(./Components/SlideThree.css); /*delete*/
+@import url(./Components/Display/Display.css);
