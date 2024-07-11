@@ -3,3 +3,7 @@ Git
 > git add --all
 > git commit -m "Add Redux"
 > git push
+
+Refresh .gitignore
+> git rm -r -f --cached .
+
