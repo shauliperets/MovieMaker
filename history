@@ -1,0 +1,1000 @@
+  985  git remote add origin https://github.com/shauliperets/ShoppingCartPages.git
+  986  git push -u origin main
+  987  git history>history
+  988  history>history
+  989  git push -u origin main
+  990  git config --global user.name "shauliperets"
+  991  git config -l
+  992  git push -u origin main
+  993  git remote add origin https://github.com/shauliperets/ShoppingCartPages.git
+  994  git reset
+  995  git config -l
+  996  git clone origin https://github.com/shauliperets/ShoppingCartPages.git
+  997  mkdir ShoppingCartPages
+  998  clear
+  999  git init
+ 1000  git config -l
+ 1001  mkdir ShoppingCartPages
+ 1002  ls
+ 1003  cd ..
+ 1004  cd /home/shaul/Workspace/Projects/ShoppingCartProject/
+ 1005  mkdir ShoppingCartPages
+ 1006  git config -l
+ 1007  git clone origin https://github.com/shauliperets/ShoppingCartPages.git
+ 1008  git remote add origin https://github.com/shauliperets/ShoppingCartPages.git
+ 1009  git status
+ 1010  git init
+ 1011  git remote add origin https://github.com/shauliperets/ShoppingCartPages.git
+ 1012  git -m commit "Initial"
+ 1013  git commit -m "Initial"
+ 1014  git branch -M main
+ 1015  git push -u origin main
+ 1016  git push
+ 1017  git push --set-upstream
+ 1018  git push --set-upstream -u origin main
+ 1019  git push --set-upstream -u origin master
+ 1020  git status
+ 1021  git add --all
+ 1022  cd ShoppingCartPages/
+ 1023  git status
+ 1024  git init
+ 1025  git commit -m "Inital"
+ 1026  git add --all
+ 1027  git commit -m "Inital"
+ 1028  git branch -M main
+ 1029  git remote add origin https://github.com/shauliperets/ShoppingCartPages.git
+ 1030  git push -u origin main
+ 1031  git -m commit "Change initial folder"
+ 1032  git add --all
+ 1033  git commit -m "Change initial folder"
+ 1034  git push
+ 1035  cd Backend/
+ 1036  dotnet watch
+ 1037  ls
+ 1038  cd /home/shaul/Workspace/Projects/
+ 1039  ls
+ 1040  cd /home/shaul/Workspace/Projects/ShoppingCartProject/
+ 1041  ls
+ 1042  cd /home/shaul/Workspace/Projects/ShoppingCartProject/ShoppingCartPages/
+ 1043  ls
+ 1044  git push
+ 1045  git push --set-upstream origin main
+ 1046  ngh
+ 1047  sudo apt-get update &&   sudo apt-get install -y dotnet-sdk-8.0
+ 1048  dotnet build
+ 1049  npm start
+ 1050  CD Backend/
+ 1051  ls
+ 1052  cd Backend/
+ 1053  dotnet watch
+ 1054  sudo apt-get update &&   sudo apt-get install -y dotnet-sdk-8.0
+ 1055  dotnet watch
+ 1056  dotnet --list-runtimes
+ 1057  dotnet --list-sdks
+ 1058  sudo apt-get update &&   sudo apt-get install -y aspnetcore-runtime-8.0
+ 1059  dotnet --list-runtimes
+ 1060  dotnet --list-sdks
+ 1061  /home/shaul/Workspace/Projects/ShoppingCartProject/ShoppingCart
+ 1062  ls
+ 1063  cd ..
+ 1064  ls
+ 1065  cd /home/shaul/Workspace/Projects/ShoppingCartProject/ShoppingCart
+ 1066  cd ..
+ 1067  ls
+ 1068  cd ShoppingDotnet8/
+ 1069  cd Backend/
+ 1070  dotnet watch
+ 1071  dotnet --list-runtimes
+ 1072  dotnet --list
+ 1073  dotnet watch
+ 1074  dotnet --list
+ 1075  dotnet publish
+ 1076  dotnet watch
+ 1077  cd /home/shaul/Workspace/Projects/ShoppingCartProject/ShoppingDotnet8
+ 1078  cd Backend/
+ 1079  dotnet watch
+ 1080  cd ..
+ 1081  ls
+ 1082  cd ..
+ 1083  ls
+ 1084  cd test/
+ 1085  dotnet new --list
+ 1086  sudo apt-get install -y dotnet-runtime-8.0
+ 1087  dotnet new --list
+ 1088  cd ..
+ 1089  cd ShoppingDotnet8/
+ 1090  cd Backend/
+ 1091  clear
+ 1092  dotnet watch
+ 1093  clear
+ 1094  dotnet watch
+ 1095  clear
+ 1096  dotnet watch
+ 1097  clear
+ 1098  dotnet watch
+ 1099  clear
+ 1100  dotnet publish
+ 1101  clear
+ 1102  dotnet watch
+ 1103  cd Frontend/
+ 1104  npm start
+ 1105  clear
+ 1106  dotnet watch
+ 1107  npm start
+ 1108  ךד
+ 1109  ls
+ 1110  cd client/
+ 1111  ls
+ 1112  npm start
+ 1113  ng new ExmCustomerApp --no-standalone
+ 1114  ng new ExmCustomer-app --no-standalone
+ 1115  ng new customer-app --no-standalone
+ 1116  ng new ExActivatedRoute
+ 1117  ng g m appRouting --flat
+ 1118  cd ExActivatedRoute/
+ 1119  ng g m appRouting --flat
+ 1120  ls
+ 1121  npm cache clean --force
+ 1122  npm install
+ 1123  npm audit fix
+ 1124  npm audit fix --force
+ 1125  npm start
+ 1126  ng update
+ 1127  ng update --help
+ 1128  ng --v
+ 1129  ng --version
+ 1130  ng --verbose
+ 1131  ng --verbose true
+ 1132  ng --verbose 1
+ 1133  ng --list
+ 1134  node -v
+ 1135  ng update @angular/core@13 @angular/cli@13 
+ 1136  git --help
+ 1137  git reset
+ 1138  ng update @angular/core@13 @angular/cli@13 
+ 1139  git status
+ 1140  git add --all
+ 1141  git commit -m "Save"
+ 1142  ng update @angular/core@13 @angular/cli@13 
+ 1143  ng update @angular/core@13 @angular/cli@13 --force
+ 1144  cd ..
+ 1145  git status
+ 1146  git add --all
+ 1147  git commit -m "Add float menu"
+ 1148  git push
+ 1149  npm start
+ 1150  dotnet --list
+ 1151  dotnet new --list
+ 1152  dotnet new --list -h
+ 1153  dotnet new -h --list
+ 1154  dotnet new list
+ 1155  dotnet new webapi
+ 1156  dotnet restore
+ 1157  ls
+ 1158  cd ..
+ 1159  ls
+ 1160  cd MovieMaker
+ 1161  ls
+ 1162  cd ..
+ 1163  ls
+ 1164  cd ShoppingCartProject/
+ 1165  ls
+ 1166  cd ShoppingCart
+ 1167  ls
+ 1168  cd Backend/
+ 1169  dotnet build
+ 1170  ls
+ 1171  dotnet --list-sdks
+ 1172  dotnet install --list
+ 1173  sudo snap install dotnet-sdk --classic
+ 1174  la
+ 1175  cd Workspace/
+ 1176  ls
+ 1177  ./dotnet7.install
+ 1178  chmode dotnet7.install 777
+ 1179  chmode 777 dotnet7.install
+ 1180  chmod 777 dotnet7.install
+ 1181  ./dotnet7.install
+ 1182  cd Workspace/Projects/ShoppingCartProject/ShoppingCart/Backend/
+ 1183  dotnet buikd
+ 1184  dotnet build
+ 1185  dotnet watch
+ 1186  cd ..
+ 1187  ls
+ 1188  cd C-Sharp/
+ 1189  cd VueCsProject/
+ 1190  ls
+ 1191  dotnet new --list
+ 1192  dotnet new apicontroller
+ 1193  dotnet new apicontroller api
+ 1194  dotnet new apicontroller api --force
+ 1195  dotnet new api apicontroller --force
+ 1196  dotnet new apicontroller --force
+ 1197  cd ..
+ 1198  cd VueCsShop/
+ 1199  dotnet new webapi
+ 1200  ls
+ 1201  cd Backend/
+ 1202  ls
+ 1203  dotnet new webapi
+ 1204  ls
+ 1205  cd Backend/
+ 1206  dotnet watch
+ 1207  dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+ 1208  dotnet add package Microsoft.EntityFrameworkCore.Tools
+ 1209  dotnet build
+ 1210  dotnet watch
+ 1211  dotnet build
+ 1212  dotnet watch
+ 1213  clear
+ 1214  dotnet watch
+ 1215  dotnet build
+ 1216  dotnet watch
+ 1217  histoty > history
+ 1218  history > history
+ 1219  git init
+ 1220  git remote add origin https://github.com/shauliperets/ShoppingCartPages.git
+ 1221  git commit -m "Add Backend"
+ 1222  git add --all
+ 1223  git commit -m "Add Backend"
+ 1224  git push
+ 1225  git add --all
+ 1226  git commit -m "Add Backend"
+ 1227  git push
+ 1228  git push --set-upstream origin master
+ 1229  git statua
+ 1230  git status
+ 1231  git init
+ 1232  git commit -m "Add backend"
+ 1233  git add --all
+ 1234  git commit -m "Add backend"
+ 1235  git branch -M main
+ 1236  git remote add origin https://github.com/shauliperets/KeterProject.git
+ 1237  git push -u origin main
+ 1238  npm create vue@latest
+ 1239  cd Frontend/
+ 1240  npm install
+ 1241  npm run dev
+ 1242  cd Client/
+ 1243  npm start dev
+ 1244  npm install
+ 1245  npm start dev
+ 1246  npm run dev
+ 1247  cd Backend/
+ 1248  dotnet watch
+ 1249  git add --all
+ 1250  git commit -m "Add client"
+ 1251  git push
+ 1252  cd Backend/
+ 1253  dotnet watch
+ 1254  cd Client/
+ 1255  npm run dev
+ 1256  cd Backend/
+ 1257  dotnet watch
+ 1258  dotnet build
+ 1259  dotnet clear
+ 1260  dotnet --list
+ 1261  dotnet -h
+ 1262  dotnet clean
+ 1263  dotnet build
+ 1264  dotnet watch
+ 1265  cd ..
+ 1266  cd /
+ 1267  cd /home/shaul/Workspace/Projects/ShoppingCartProject/ShoppingCart/
+ 1268  ls
+ 1269  cd ..
+ 1270  ls
+ 1271  cd ShoppingCart/
+ 1272  mkdir Backend
+ 1273  cd Backend/
+ 1274  cd ..
+ 1275  dotnet new webapi -o Backend
+ 1276  dotnet restore
+ 1277  cd ..
+ 1278  cd OldVersions/ShoppingCart
+ 1279  ls
+ 1280  cd Backend/
+ 1281  dotnet restore
+ 1282  cd ..
+ 1283  cd ShoppingCart/
+ 1284  ls
+ 1285  cd Backend/
+ 1286  ls
+ 1287  cd ..
+ 1288  cd /home/shaul/Workspace/Projects/ShoppingCartProject/ShoppingCart/
+ 1289  ls
+ 1290  mkdir Backend
+ 1291  dotnet new webapi
+ 1292  dotnet restore
+ 1293  dotnet build
+ 1294  dotnet watch
+ 1295  mkdir ShoppingCart
+ 1296  dotnet new webapi -o Backend
+ 1297  dotnet build
+ 1298  cd Backend/
+ 1299  dotnet build
+ 1300  dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+ 1301  dotnet add package Microsoft.EntityFrameworkCore.Tools
+ 1302  dotnet build
+ 1303  dotnet watch
+ 1304  clear
+ 1305  dotnet watch
+ 1306  cd Frontend/
+ 1307  ng serve
+ 1308  clear
+ 1309  dotnet watch
+ 1310  ng new AngularTest2
+ 1311  ng serve
+ 1312  cd AngularTest2
+ 1313  ng serve
+ 1314  cd Frontend/
+ 1315  ng g c Popup
+ 1316  dotnet watch
+ 1317  mpm start
+ 1318  npm start
+ 1319  dotnet watch
+ 1320  cd Frontend/
+ 1321  npm start
+ 1322  git add --all
+ 1323  git commit -m "Add details popup"
+ 1324  git push
+ 1325  cd Backend/
+ 1326  dotnet watch
+ 1327  npm start
+ 1328  dotnet watch
+ 1329  git commit -m "Fix details"
+ 1330  git add --all
+ 1331  git commit -m "Fix details"
+ 1332  git push
+ 1333  cd Backend/
+ 1334  dotnet watch
+ 1335  npm start
+ 1336  npm run
+ 1337  cd Frontend/
+ 1338  npm start
+ 1339  npx react-native@latest init HelloWorldProject
+ 1340  npx react-native@latest init FirstProject
+ 1341  npm start
+ 1342  cd FirstProject/
+ 1343  npm start
+ 1344  ls
+ 1345  cd bin
+ 1346  ./studio.sh
+ 1347  node -v
+ 1348  $HOME/
+ 1349  cd $HOME/
+ 1350  ךד
+ 1351  ls
+ 1352  tar xvf openjdk-13*_bin.tar.gz
+ 1353  tar xvf OpenJDK17U-jdk_x64_linux_hotspot_17.0.10_7.tar.gz
+ 1354  cd ~
+ 1355  ls
+ 1356  cd ..
+ 1357  ls
+ 1358  cd ..
+ 1359  ls
+ 1360  cd ..
+ 1361  ls
+ 1362  cd dev
+ 1363  ls
+ 1364  cd ..
+ 1365  ls
+ 1366  cd etc
+ 1367  ls
+ 1368  cd ..
+ 1369  ls
+ 1370  cd sys
+ 1371  ls
+ 1372  cd ../proc
+ 1373  ls
+ 1374  cd ..
+ 1375  ls
+ 1376  cd ..
+ 1377  ls
+ 1378  cd lob
+ 1379  cd lib
+ 1380  ls
+ 1381  cd ..
+ 1382  cd ~
+ 1383  ls
+ 1384  cd Downloads/
+ 1385  ls
+ 1386  mv jdk-17.0.10+7/ /lib
+ 1387  ls /lib
+ 1388  sudo mv jdk-17.0.10+7/ /lib
+ 1389  cd /lib
+ 1390  ls
+ 1391  cd jdk-17.0.10+7/
+ 1392  ls
+ 1393  cd bin
+ 1394  ls
+ 1395  ls /isr
+ 1396  ls /usr
+ 1397  ls /usr/lib
+ 1398  ls /lib
+ 1399  npm start
+ 1400  ./studio.sh
+ 1401  cd FirstProject/
+ 1402  npx react-native doctor
+ 1403  cd FirstProject/
+ 1404  npm start
+ 1405  npx react-native doctor.
+ 1406  npx react-native doctor
+ 1407  cd FirstProject/
+ 1408  npx react-native doctor
+ 1409  npm start
+ 1410  npm start --verbose
+ 1411  cd FirstProject/
+ 1412  npm start --verbose
+ 1413  npm start --debug
+ 1414  cd FirstProject/
+ 1415  npm start --debug
+ 1416  print ANDROID_HOME
+ 1417  echo ANDROID_HOME
+ 1418  echo $ANDROID_HOME
+ 1419  echo $path
+ 1420  mv cmdline-tools/ /usr/lib
+ 1421  sudo mv cmdline-tools/ /usr/lib
+ 1422  cd bin/
+ 1423  ./sdkmanager
+ 1424  ./sdkmanager --list
+ 1425  ./sdkmanager
+ 1426  ./sdkmanager --list
+ 1427  sudo apt install default-jdk
+ 1428  update-alternatives --config java
+ 1429  java -version
+ 1430  cd client/
+ 1431  npm start
+ 1432  dotnet new install Ardalis.CleanArchitecture.Template::9.1.2
+ 1433  dotnet new --list
+ 1434  dotnet new clean-arch -n CleanArcitectureProject
+ 1435  cd CleanArcitectureProject/
+ 1436  dotnet build
+ 1437  dotnet watch
+ 1438  ls
+ 1439  dotnet run
+ 1440  cd ..
+ 1441  cd /home/shaul/Workspace/C-Sharp/
+ 1442  ls
+ 1443  dotnet new ca-sln -cf Angular -o CleanArchitectureApiAngular
+ 1444  dotnet new install Clean.Architecture.Solution.Template::8.0.5
+ 1445  dotnet new ca-sln -cf Angular -o CleanArchitectureApiAngular
+ 1446  cd CleanArchitectureApiAngular/
+ 1447  cd src/Web/
+ 1448  dotnet run
+ 1449  cd ..
+ 1450  dotnet new ca-sln -cf None -o CleanArchitectureApi
+ 1451  cd CleanArchitectureApi/src/Web/
+ 1452  ls
+ 1453  dotnet run
+ 1454  cd CleanArchitectureApiAngular/
+ 1455  cd src/Web/
+ 1456  dotnet build
+ 1457  dotnet add package Azure.Identity --version 1.11.1
+ 1458  dotnet build
+ 1459  dotnet add package Newtonsoft.Json --version 13.0.3
+ 1460  dotnet build
+ 1461  apt update
+ 1462  sudo apt update
+ 1463  dotnet build
+ 1464  cd client/
+ 1465  npm start
+ 1466  cd api/
+ 1467  npm start
+ 1468  node app.js
+ 1469  cd ..
+ 1470  mkdir Backend
+ 1471  cd Backend/
+ 1472  npm init
+ 1473  npm install express --save
+ 1474  node index.js 
+ 1475  dotnet new --list
+ 1476  dotnet new webapi -n Backend
+ 1477  dotnet restore
+ 1478  cd Backend/
+ 1479  dotnet restore
+ 1480  dotnet build
+ 1481  cd ..
+ 1482  cd client/
+ 1483  npm start
+ 1484  cd client/
+ 1485  npm start
+ 1486  cd Backend/
+ 1487  dotnet watch
+ 1488  npm start
+ 1489  cd client/
+ 1490  npm install file-saver --save
+ 1491  bower install file-saver
+ 1492  sudo snap install bower
+ 1493  npm start
+ 1494  dotnet watch
+ 1495  npm start
+ 1496  dotnet watch
+ 1497  cd Backend/
+ 1498  donnet watch
+ 1499  dotnet watch
+ 1500  cd client/
+ 1501  npm start
+ 1502  donnet watch
+ 1503  dotnet watch
+ 1504  node -v
+ 1505  ng v
+ 1506  dotnet watch
+ 1507  npm start
+ 1508  dotnet watch
+ 1509  npm start
+ 1510  clear
+ 1511  npm start
+ 1512  clear
+ 1513  dotnet watch
+ 1514  clear
+ 1515  npm start
+ 1516  ./sdkmanager 
+ 1517  ./sdkmanager --list
+ 1518  sudo apt install default-jdk
+ 1519  update-alternatives --config java
+ 1520  ./sdkmanager 
+ 1521  ./sdkmanager --list
+ 1522  ./sdkmanager 
+ 1523  ./sdkmanager --list
+ 1524  ./sdkmanager platform-tools emulator
+ 1525  ./sdkmanager --list | grep "system-images;android"
+ 1526  ./sdkmanager "platform;android-21" "system-images;android-21;default;x86_64" "build-tools;29.0.3"
+ 1527  ./sdkmanager "platforms;android-21" "system-images;android-21;default;x86_64" "build-tools;29.0.3"
+ 1528  ./advmanager create avd -n "my_avd_21" -k "system-images;android-21;default;x86_64"
+ 1529  ./avdmanager create avd -n "my_avd_21" -k "system-images;android-21;default;x86_64"
+ 1530  ./avdmanager list avd
+ 1531  cd ..
+ 1532  cd emulator/
+ 1533  ./emulator -avd "my_avd_21"
+ 1534  cd Workspace/
+ 1535  history > history
+ 1536  cd emulator/
+ 1537  ./emulator -avd "my_avd_21"
+ 1538  kvm-ok
+ 1539  sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+ 1540  sudo apt-get install qemu-system-x86 libvirt-bin ubuntu-vm-builder bridge-utils
+ 1541  sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+ 1542  sudo apt-get install qemu-system-x86 libvirt-daemon-system libvirt-clients bridge-utils
+ 1543  ./emulator -avd "my_avd_21"
+ 1544  sudo apt-get install cpu-checker
+ 1545  egrep -c '(vmx|svm)' /proc/cpuinfo
+ 1546  apt --fix-broken install
+ 1547  sudo apt --fix-broken install
+ 1548  ./emulator -avd "my_avd_21"
+ 1549  cd emulator/
+ 1550  ./emulator -avd "my_avd_21"
+ 1551  sudo apt-get install qemu-kvm
+ 1552  sudo apt --fix-broken install
+ 1553  ./emulator -avd "my_avd_21"
+ 1554  sudo apt-get install qemu-kvm
+ 1555  sudo apt --fix-broken install
+ 1556  ./emulator -avd "my_avd_21"
+ 1557  sudo apt-get install cpu-checker
+ 1558  sudo apt --fix-broken install
+ 1559  sudo apt-get install openjdk-7-jdk`
+ 1560  sudo apt-get install openjdk-7-jdk
+ 1561  sdkmanager --list
+ 1562  ls
+ 1563  ./sdkmanager --list
+ 1564  ./sdkmanager --install system-images;android-33;google_apis;x86_64
+ 1565  ./sdkmanager --list | grep "system-images;android"
+ 1566  ./sdkmanager --install system-images;android-34;google_apis;x86_64
+ 1567  ./sdkmanager --install "system-images;android-34;google_apis;x86_64"
+ 1568  ./sdkmanager "platform-tools" "platforms;android-33"
+ 1569  avdmanager create avd --name android33 --package "system-images;android-33;google_apis;x86_64"
+ 1570  ./avdmanager create avd --name android33 --package "system-images;android-33;google_apis;x86_64"
+ 1571  ./sdkmanager "platforms" "platforms;android-33"
+ 1572  ./advmanager create avd -n "my_avd_33" -k "system-images;android-33;google_apis;x86_64"
+ 1573  ./avdmanager create avd -n "my_avd_33" -k "system-images;android-33;google_apis;x86_64"
+ 1574  npx react-native-cli init HelloWorld
+ 1575  apt-get update
+ 1576  sudo npx react-native-cli init HelloWorld
+ 1577  npx react-native-cli init Clock
+ 1578  npx react-native init Clock
+ 1579  cd Clock/
+ 1580  code .
+ 1581  ./emulator -avd "my_avd_21"
+ 1582  npm start
+ 1583  npm run android
+ 1584  npm start
+ 1585  keytool -genkey -v -keystore first_app_key_name.keystore -alias first_app_key_alias -keyalg RSA -keysize 2048 -validity 10000
+ 1586  cd android/
+ 1587  ./gradlew assembleRelease
+ 1588  npm start
+ 1589  npx react-native init Clock
+ 1590  cd Clock/
+ 1591  npm start
+ 1592  ./emulator -avd "my_avd_21"
+ 1593  ./sdkmanager platform-tools emulator
+ 1594  ./sdkmanager --list
+ 1595  ./sdkmanager
+ 1596  ./sdkmanager 
+ 1597  ./sdkmanager
+ 1598  export SDKMANAGER_OPTS="--add-modules java.se.ee"
+ 1599  ./sdkmanager
+ 1600  cd ~/Android/command-line-tool/tools/bin
+ 1601  ./sdkmanager
+ 1602  ./sdkmanager --list
+ 1603  cd ~/Android/command-line-tool/tools/bin
+ 1604  ./sdkmanager --list
+ 1605  update-alternatives --config java
+ 1606  ls
+ 1607  ./sdkmanager --list
+ 1608  cd ..
+ 1609  cd tools/
+ 1610  cd bin/
+ 1611  ./sdkmanager --list
+ 1612  ./sdkmanager platform-tools emulator
+ 1613  cd ~/Android/cmdline-tools/tools/bin
+ 1614  ./sdkmanager platform-tools emulator
+ 1615  ./sdkmanager --list
+ 1616  ./sdkmanager platform-tools emulator
+ 1617  history
+ 1618  npm start
+ 1619  --list | grep "system-images;android"
+ 1620  ./sdkmanager --list | grep "system-images;android"
+ 1621  ./sdkmanager "platforms;android-33" "system-images;android-33;default;x86_64" "build-tools;29.0.3"
+ 1622  ./avdmanager create avd -n "avd_33" -k "system-images;android-23;default;x86_64"
+ 1623  ./avdmanager create avd -n "avd_33" -k "system-images;android-33;default;x86_64"
+ 1624  ./avdmanager list avd
+ 1625  ./emulator -avd "avd_33"
+ 1626  cd ..
+ 1627  cls
+ 1628  ls
+ 1629  cd ..
+ 1630  ls
+ 1631  cd emulator/
+ 1632  ./emulator -avd "avd_33"
+ 1633  ssh -i "UbuntuServer.pem" ubuntu@ec2-51-20-42-243.eu-north-1.compute.amazonaws.com
+ 1634  chmod 400 "UbuntuServer.pem"
+ 1635  ssh -i "UbuntuServer.pem" ubuntu@ec2-51-20-42-243.eu-north-1.compute.amazonaws.com
+ 1636  sudo ssh -i "UbuntuServer.pem" ubuntu@ec2-51-20-42-243.eu-north-1.compute.amazonaws.com
+ 1637  history > h
+ 1638  sudo ssh -i "UbuntuServer.pem" ubuntu@172.31.39.240
+ 1639  cd ~/Workspace/AWS
+ 1640  sudo ssh -i "UbuntuServer.pem" ubuntu@172.31.39.240
+ 1641  ls
+ 1642  sudo ssh -i "UbuntuServer.pem" ubuntu@ec2-51-20-42-243.eu-north-1.compute.amazonaws.com
+ 1643  sudo ssh -i "UbuntuServer.pem" ubuntu@172.31.39.240
+ 1644  ssh -i "UbuntuServer.pem" ubuntu@ec2-51-20-42-243.eu-north-1.compute.amazonaws.com
+ 1645  sudo ssh -i "UbuntuServer.pem" ubuntu@172.31.39.240
+ 1646  sudo ssh -i "UbuntuServer.pem" ubuntu@51.20.42.243
+ 1647  ssh -i "UbuntuServer.pem" ubuntu@ec2-51-20-42-243.eu-north-1.compute.amazonaws.com
+ 1648  ssh -i "UbuntuServer.pem" ubuntu@51.20.42.243
+ 1649  chmod 400 UbuntuServer.pem
+ 1650  ssh -i UbuntuServer.pem ubuntu@ec2-51-20-42-243.eu-north-1.compute.amazonaws.com
+ 1651  npm start
+ 1652  ssh -i "UbuntuServer.pem" ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com
+ 1653  cd ~/Workspace/AWS
+ 1654  ssh -i "UbuntuServer.pem" ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com
+ 1655  ./emulator -avd "avd_33"
+ 1656  npm install react-native-maps
+ 1657  npm start
+ 1658  cd /home/shaul/Android/emulator/
+ 1659  ./emulator -avd "avd_33"
+ 1660  npm start
+ 1661  cd /home/shaul/Android/emulator/
+ 1662  ./emulator -avd "avd_33"
+ 1663  npm create-react-app 
+ 1664  npm create-react-app TestProject
+ 1665  npx create-react-app TestProject
+ 1666  npx create-react-app testProject
+ 1667  npx create-react-app tests
+ 1668  cd tests/
+ 1669  npm start
+ 1670  dotnet run
+ 1671  cd ..
+ 1672  ls
+ 1673  clear
+ 1674  dotnet new --list
+ 1675  dotnet new console ConsoleTest
+ 1676  dotnet new console -n ConsoleTest
+ 1677  cd ConsoleTest/
+ 1678  clear
+ 1679  dotnet run
+ 1680  sudo apt-get update
+ 1681  sudo apt-get install ca-certificates curl
+ 1682  sudo install -m 0755 -d /etc/apt/keyrings
+ 1683  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+ 1684  sudo chmod a+r /etc/apt/keyrings/docker.asc
+ 1685  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+ 1686    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ 1687  sudo apt-get update
+ 1688  sudo docker run hello-world
+ 1689  apt --fix-broken install
+ 1690  sudo apt --fix-broken install
+ 1691  curl -fsSL https://get.docker.com -o install-docker.sh
+ 1692  cat install-docker.sh
+ 1693  sh install-docker.sh --dry-run
+ 1694  sudo sh install-docker.sh
+ 1695  sudo apt --fix-broken install
+ 1696  sudo sh install-docker.sh
+ 1697  lsb_release -a
+ 1698  sudo apt install docker.io
+ 1699  sudo apt --fix-broken install docker.io
+ 1700  dpkg -l containerd*
+ 1701  sudo apt install containerd
+ 1702  sudo apt-get remove docker docker-engine docker.io containerd runc
+ 1703  sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose
+ 1704  sudo apt install containerd -y
+ 1705  sudo apt-get -y install runc
+ 1706  sudo apt-get install unixodbc unixodbc-dev
+ 1707  sudo apt-get update
+ 1708  sudo apt-get install odbcinst1debian2
+ 1709  sudo dpkg -i odbcinst*
+ 1710  sudo apt-get update -y
+ 1711  sudo apt-get install -y odbcinst
+ 1712  sudo apt-get install -y odbcinst1debian2
+ 1713  apt --fix-broken install
+ 1714  sudo apt --fix-broken install
+ 1715  sudo apt autoremove
+ 1716  sudo apt-get update -y
+ 1717  sudo apt-get install -y odbcinst1debian2
+ 1718  sudo apt install -f docker.io
+ 1719  sudo apt install containerd pigz ubuntu-fan odbcinst1debian2
+ 1720  sudo apt install containerd pigz ubuntu-fan odbcinst1debian2 runc
+ 1721  sudo apt install containerd pigz ubuntu-fan odbcinst1debian2 runc libodbc1
+ 1722  sudo apt install containerd pigz ubuntu-fan odbcinst1debian2 runc libodbc1 odbcinst
+ 1723  sudo apt install containerd pigz ubuntu-fan odbcinst1debian2 runc libodbc1 odbcinst bridge-utils
+ 1724  sudo apt install --force-overwrite containerd pigz ubuntu-fan odbcinst1debian2 runc libodbc1 odbcinst bridge-utils
+ 1725  sudo dpkg --force-overwrite /var/cache/apt/archives/odbcinst_2.3.11-1_amd64.deb
+ 1726  sudo dpkg --configure -a
+ 1727  sudo apt install unixodbc msodbcsql17
+ 1728  sudo apt install unixodbc msodbcsql17 odbcinst1debian2 libodbc1
+ 1729  sudo apt install unixodbc msodbcsql17 odbcinst1debian2 libodbc1 odbcinst
+ 1730  sudo apt remove --purge libodbc1
+ 1731  sudo apt remove --purge libodbc1 odbcinst1debian2
+ 1732  sudo apt remove --purge odbcinst1debian2
+ 1733  sudo apt install unixodbc msodbcsql17 odbcinst1debian2 libodbc1 odbcinst unixodbc
+ 1734  yum install libiodbc
+ 1735  sudo apt install dnf
+ 1736  sudo apt-get install libodbc1
+ 1737  sudo apt-get install libodbc1 odbcinst1debian2
+ 1738  sudo apt-get install libodbc1 odbcinst1debian2 odbcinst1debian2
+ 1739  sudo apt-get install libodbc1 odbcinst1debian2 odbcinst
+ 1740  sudo apt-get install libodbc1 odbcinst1debian2
+ 1741  sudo apt-get install libodbc1 odbcinst1debian2 odbcinst1debian2
+ 1742  sudo apt-get install odbcinst1debian2
+ 1743  sudo apt-get install odbcinst1debian2 odbcinst
+ 1744  sudo apt-get install odbcinst1debian2 odbcinst libodbc1
+ 1745  dpkg --remove  unixodbc-dev
+ 1746  sudo dpkg --remove  unixodbc-dev
+ 1747  sudo apt-get install odbcinst1debian2 odbcinst libodbc1
+ 1748  sudo dpkg --remove libodbc1
+ 1749  sudo dpkg --remove odbcinst1debian2
+ 1750  sudo apt-get -f install odbcinst1debian2 odbcinst libodbc1
+ 1751  ~/Workspace/AWS / 1887  ssh -i "UbuntuServer.pem" ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com
+ 1752  ~/Workspace/AWS /  ssh -i "UbuntuServer.pem" ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com
+ 1753  ~/Workspace/AWS &  ssh -i "UbuntuServer.pem" ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com
+ 1754  ssh -i "UbuntuServer.pem" ubuntu@ec2-51-20-42-243.eu-north-1.compute.amazonaws.com
+ 1755  cd /home/shaul/Workspace/AWS/
+ 1756  ls
+ 1757  ssh -i "UbuntuServer.pem" ubuntu@ec2-51-20-42-243.eu-north-1.compute.amazonaws.com
+ 1758  history
+ 1759  clear
+ 1760  history > history
+ 1761  cd ~/Workspace/AWS
+ 1762  ssh -i "UbuntuServer.pem" ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com
+ 1763  ~/Workspace/AWS 
+ 1764  cd ~/Workspace/AWS 
+ 1765  scp -r ShoppingCartDB.sql ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com:/home/ubuntu/Workspace
+ 1766  sudo scp -r ShoppingCartDB.sql ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com:/home/ubuntu/Workspace
+ 1767  sudo scp -i "UbuntuServer.pem" ShoppingCartDB.sql ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com:/home/ubuntu/Workspace
+ 1768  sudo scp -i "UbuntuServer.pem" Ubuntu1804.image ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com:/home/ubuntu/Workspace
+ 1769  ls
+ 1770  sudo scp -i "UbuntuServer.pem" Ubuntu1804.image ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com:/home/ubuntu/Workspace
+ 1771  cd ~/Workspace/AWS & ssh -i "UbuntuServer.pem" ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com
+ 1772  xit
+ 1773  cd ~/Workspace/AWS & ssh -i "UbuntuServer.pem" ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com
+ 1774  sudo scp -i "UbuntuServer.pem" Ubuntu1804.image ubuntu@ec2-3-70-232-91.eu-central-1.compute.amazonaws.com:/home/ubuntu/Workspace
+ 1775  dotnet --info
+ 1776  docker --version
+ 1777  sudo snap install docker
+ 1778  docker --version
+ 1779  docker --info
+ 1780  sudo apt install
+ 1781  sudo apt update
+ 1782  dd if=/dev/zero of=/media/fasthdd/swapfile.img bs=1024 count=6M
+ 1783  sudo dd if=/dev/zero of=/media/fasthdd/swapfile.img bs=1024 count=6M
+ 1784  dd --help
+ 1785  sudo free -h
+ 1786  swapon -s
+ 1787  cd /swapfile
+ 1788  ls /home/
+ 1789  ls /
+ 1790  cd /swapfile
+ 1791  sudo dd if=/dev/zero of=/swapfile bs=1024 count=8M
+ 1792  sudo dd if=/dev/zero of=/swapfile bs=1024 count=8M status=progress
+ 1793  sudo swapon --show
+ 1794  df -h
+ 1795  sudo swapoff -a
+ 1796  sudo dd if=/dev/zero of=/swapfile bs=1024 count=8M status=progress
+ 1797  sudo chmod 600 /swapfile
+ 1798  sudo mkswap /swapfile
+ 1799  sudo swapon /swapfile
+ 1800  sudo swapon --show
+ 1801  dotnet run
+ 1802  dotnet watch
+ 1803  dotnet build
+ 1804  npm start
+ 1805  node -v
+ 1806  npm -v
+ 1807  npm install --save redux
+ 1808  npm install --save react-redux
+ 1809  ls
+ 1810  npm install --save-dev redux-devtools
+ 1811  pwd
+ 1812  histort > history
+ 1813  history > history
+ 1814  cd /
+ 1815  ./emulator -avd "avd_33"
+ 1816  cd Clock/
+ 1817  npm start
+ 1818  npm install redux
+ 1819  npm install redux-react @reduxjs/toolkit
+ 1820  cd client/
+ 1821  npm install redux
+ 1822  npm install redux-react @reduxjs/toolkit
+ 1823  npm install react-redux @reduxjs/toolkit
+ 1824  npm update
+ 1825  npm start
+ 1826  npm install react-redux @reduxjs/toolkit
+ 1827  npm install react-redux @reduxjs/toolkit --force
+ 1828  npm start
+ 1829  cd ..
+ 1830  npm create-react-app Fronend
+ 1831  npx create-react-app Fronend
+ 1832  npx create-react-app Frontend
+ 1833  npx create-react-app frontend
+ 1834  npm start
+ 1835  cd Frontend/
+ 1836  npm start
+ 1837  npm install react-redux @reduxjs/toolkit
+ 1838  npm install redux
+ 1839  npm install react-redux
+ 1840  npm start
+ 1841  ls
+ 1842  cd react-redux-toolkit-tutorial-main/
+ 1843  npm install
+ 1844  npm start
+ 1845  cd WcfService/
+ 1846  dotnet --list
+ 1847  dotnet -v
+ 1848  dotnet -version
+ 1849  dotnet help
+ 1850  dotnet -list
+ 1851  dotnet list
+ 1852  dotnet add --list
+ 1853  dotnet add -list
+ 1854  dotnet -h
+ 1855  dotnet new --list
+ 1856  dotnet new web
+ 1857  dotnet install CoreWCF.Http
+ 1858  dotnet add package CoreWCF.Http
+ 1859  dotnet add package CoreWCF.Primitives
+ 1860  dotnet run
+ 1861  dotnet watch
+ 1862  clear
+ 1863  dotnet watch
+ 1864  npm start
+ 1865  npm build
+ 1866  ls
+ 1867  cd Frontend/
+ 1868  npm build
+ 1869  npm start
+ 1870  cd Frontend/
+ 1871  npm start
+ 1872  cd Frontend/
+ 1873  npm start
+ 1874  cd Frontend/
+ 1875  npm start
+ 1876  npm install @reduxjs/toolkit
+ 1877  npm install react-redux
+ 1878  npm install
+ 1879  npm start
+ 1880  clear
+ 1881  npx create-react-app CounterRedux
+ 1882  npx create-react-app counterRedux
+ 1883  npx create-react-app counterredux
+ 1884  cd counterredux/
+ 1885  install react-redux~
+ 1886  npm install react-redux~
+ 1887  npm install react-redux
+ 1888  npm start
+ 1889  sudo apt-get remove google-chrome-stable
+ 1890  apt-get install update
+ 1891  sudo apt-get install update
+ 1892  sudo snap remove chromium
+ 1893  sudo snap install chromium
+ 1894  npm start
+ 1895  cd counterredux/
+ 1896  npm start
+ 1897  npx create-next-app --example with-redux ExampleRedux
+ 1898  npx create-next-app --example with-redux exampleredux
+ 1899  cd exampleredux/
+ 1900  npm start
+ 1901  npm build
+ 1902  npm next build
+ 1903  cd ..
+ 1904  git clone https://github.com/reduxjs/redux.git
+ 1905  cd redux/
+ 1906  cd examples/
+ 1907  cd redux/examples/counter-vanilla
+ 1908  cd counter-vanilla/
+ 1909  npm start
+ 1910  npm install
+ 1911  sudo apt update
+ 1912  sudo apt upgrade
+ 1913  apt --fix-broken install
+ 1914  sudo apt --fix-broken install
+ 1915  sudo apt upgrade
+ 1916  sudo apt upgrade --force
+ 1917  sudo apt upgrade -force
+ 1918  sudo apt install libc6=2.31-0ubuntu9.2 libc-bin=2.31-0ubuntu9.2
+ 1919  sudo apt install libc6=2.31-0ubuntu9.
+ 1920  sudo apt install libc6=2.31-0ubuntu9
+ 1921  sudo apt install libc6=2.31-0ubuntu9 .
+ 1922  clear
+ 1923  apt show -a libc6
+ 1924  sudo apt install libc6=2.35-0ubuntu3
+ 1925  sudo apt install build-essential
+ 1926  sudo apt --fix-broken install
+ 1927  sudo apt install libc6=2.35-0ubuntu3
+ 1928  sudo apt install libc6=2.35-0ubuntu3 libc-bin=2.35-0ubuntu3
+ 1929  apt-get remove libc6
+ 1930  SUDO apt-get remove libc6
+ 1931  sudo apt-get remove libc6
+ 1932  clear
+ 1933  sudo dpkg --configure -a
+ 1934  sudo apt-get update && sudo apt-get upgrade -y
+ 1935  sudo apt-get install -f
+ 1936  sudo apt autoremove
+ 1937  sudo apt install odbcinst1debian2
+ 1938  sudo apt install libodbc1
+ 1939  sudo apt install libodbc1 odbcinst1debian2
+ 1940  sudo apt install libodbc1 odbcinst1debian2 odbcinst
+ 1941  sudo dpkg -i --force-overwrite /var/cache/apt/archives/nvidia-340_340.107-0ubuntu0~gpu18.04.1_amd64.deb
+ 1942  sudo dpkg -i --force-overwrite /var/cache/apt/archives/odbcinst_2.3.11-1_amd64.deb
+ 1943  sudo apt install libodbc1 odbcinst1debian2 odbcinst
+ 1944  sudo apt autoremove
+ 1945  sudo apt autoremove -f
+ 1946  sudo apt-get update && sudo apt-get upgrade -y
+ 1947  cd redux/examples/counter-vanilla/
+ 1948  npm install
+ 1949  npm start
+ 1950  cd ../..
+ 1951  cd ..
+ 1952  cd exampleredux/
+ 1953  npm install
+ 1954  npm start
+ 1955  cd ..
+ 1956  cd counterredux/
+ 1957  npm start
+ 1958  npm install @reduxjs/toolkit react-redux
+ 1959  bpm start
+ 1960  npm start
+ 1961  cd
+ 1962  ls
+ 1963  cd Frontend/
+ 1964  npm start
+ 1965  history > history
+ 1966  ls
+ 1967  npx create-react-app MovieMaker
+ 1968  npx create-react-app moviemaker
+ 1969  npm start
+ 1970  npm install @reduxjs/toolkit react-redux
+ 1971  npm start
+ 1972  sudo apt update
+ 1973  sudo apt install telegram-desktop
+ 1974  npm start
+ 1975  npm install
+ 1976  npm start
+ 1977  npm clear
+ 1978  npm --help
+ 1979  npm start
+ 1980  npm install
+ 1981  npm start
+ 1982  npm install
+ 1983  npm start
+ 1984  history > history

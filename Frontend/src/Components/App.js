@@ -29,7 +29,7 @@ import { CloseLogo } from "./SelectLogo/SelectLogoSlice";
 
 function App() {
   //const [isColorSetPopupOpen, setIsColorSetPopupOpen] = React.useState(false);
-  const [isLogoPopupOpen, setIsLogoPopupOpen] = React.useState(false);
+  //const [isLogoPopupOpen, setIsLogoPopupOpen] = React.useState(false);
   const [isBackgroundPopupOpen, setIsBackgroundPopupOpen] = React.useState(false);
   const [selectSet, setSelectedSet] = React.useState("Tech");
   const [loadedImage, setLoadedImage] = React.useState(""); //delete
@@ -187,7 +187,7 @@ function App() {
     dispatch(CloseLogo());
 
     //setIsColorSetPopupOpen(false);
-    setIsLogoPopupOpen(false);
+    //setIsLogoPopupOpen(false);
     setIsBackgroundPopupOpen(false);
   }
 
@@ -195,9 +195,9 @@ function App() {
     setSelectedSet(value);
   }
 
-  function openLogoPopup() {
+  /*function openLogoPopup() {
     setIsLogoPopupOpen(true);
-  }
+  }*/
 
   function openBackroundPopup(id) {
     setIsBackgroundPopupOpen(true);
@@ -317,11 +317,11 @@ function App() {
         <Logo></Logo>
         <Header></Header>
         <SelectLogo
-          openPopup={openPopup}
+          //openPopup={openPopup}
           //isOpen={isColorSetPopupOpen}
           selectSet={selectSet}
           //onLoadImage={onLoadImageClick}
-          onLoadClick={openLogoPopup}
+          //onLoadClick={openLogoPopup}
           source={loadedImage} //selet it
           logo={logo} //delete
           logoSource={logoSource}

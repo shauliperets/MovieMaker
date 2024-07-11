@@ -26,13 +26,13 @@ function SelectLogo(props) {
       </div>
       <div className="select-logo__display">
         <Display
-          logoSource={props.logoSource}
-          productName="שם המוצר"
-          productDetails="פרטים על המוצר"
-          productPriceMajor="00"
-          productPriceMinor="00"
-          backgroundSource={props.backgroundSource}
-          notes="האותיות הקטנות"
+          logoSource={selectLogo.Logo}
+          productName={selectLogo.Name}
+          productDetails={selectLogo.Details}
+          productPriceMajor={selectLogo.Major}
+          productPriceMinor={selectLogo.Minor}
+          backgroundSource={selectLogo.Background}
+          notes={selectLogo.Notes}
         ></Display>
       </div>
     </div>

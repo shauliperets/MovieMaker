@@ -4,13 +4,13 @@ export const SelectLogoSlice = createSlice({
   name: "SelectLogoSlice",
   initialState: {
     IsOpen: false,
-    Logo: "",
-    Name: "שן המוצר",
+    Logo: "./logo.png",
+    Name: "שם המוצר",
     Details: "פרטים על המוצר",
     PriceMajor: "00",
     PriceMinor: "00",
-    Background: "",
-    Notes: "",
+    Background: "./cup.png",
+    Notes: "האותיות הקטנות",
   },
   reducers: {
     OpenLogo: (state) => {
