@@ -1,6 +1,6 @@
 {
   "name": "moviemaker",
-  "homepage": "https://{shauliperets}.github.io/{MovieMaker}",
+  "homepage": "https://{shauliperets}.github.io/{MovieMaker}/Frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
