@@ -6,7 +6,7 @@ function ColorSet(props) {
   //const isSetColorOpen = useSelector((state) => state.ColorSet.value);
 
   React.useEffect(() => {
-    console.log(props.name);
+    //console.log(props.name);
     setColorSet(props.name);
   }, []);
 

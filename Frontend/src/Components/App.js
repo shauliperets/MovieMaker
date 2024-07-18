@@ -6,7 +6,7 @@ import SelectLogo from "./SelectLogo/SelectLogo";
 import Popup from "./Popup";
 import ColorSet from "./ColorSet/ColorSet";
 import UploadFile from "./UploadFile";
-import Slide from "./Slide";
+import Slide from "./Slide/Slide";
 //import SlideOne from "./SlideOne";
 //import SlideThree from "./SlideThree";
 import SlideProductPrice from "./SlideProductPrice";
@@ -15,11 +15,15 @@ import { api } from "../Utils/Api";
 import { Counter } from "./Counter/Counter";
 
 import { useSelector, useDispatch } from "react-redux";
+
 import { Open, Close } from "./ColorSet/ColorSetSlice";
 
 //import { SelectLogoActions } from "./SelectLogo/SelectLogoSlice";
 //import { Open, Close } from "./SelectLogo/SelectLogoSlice";
 import { CloseLogo } from "./SelectLogo/SelectLogoSlice";
+
+import SlideSlice from "./Slide/SlideSlice";
+import { AddSlide } from "./Slide/SlideSlice";
 
 // 1. Add route
 // 2. Use Suspense for lazy loading. Link - https://linguinecode.com/post/code-splitting-react-router-with-react-lazy-and-react-suspense#:~:text=Step%203%3A%20Use%20React%20Suspense%20component
@@ -38,7 +42,7 @@ function App() {
   const [logoSource, setLogoSource] = React.useState("./logo.png");
   const [backgroundSource, setBackgroundSource] = React.useState("./image-load.png");
   const [selectSlide, setSelectedSlide] = React.useState("");
-  const [isAddSlideMenuVisible, setIsAddSlideMenuVisible] = React.useState(false);
+  //const [isAddSlideMenuVisible, setIsAddSlideMenuVisible] = React.useState(false);
   const [slideOneProductName, setSlideOneProductName] = React.useState("שם המוצר");
   const [slideOneProductDetails, setSlideOneProductDetails] = React.useState("פרטים על המוצר");
   const [slideOneProductPriceMajor, setSlideOneProductPriceMajor] = React.useState("0");
@@ -53,6 +57,8 @@ function App() {
 
   const isColorSetOpen = useSelector((state) => state.ColorSet.value);
   const selectLogo = useSelector((state) => state.SelectLogo);
+  const slide = useSelector((state) => state.Slide);
+
   const dispatch = useDispatch();
 
   React.useEffect(() => {
@@ -96,19 +102,19 @@ function App() {
     //setLoadedImage(URL.createObjectURL(file));loadedImage
   }, [slides]);
 
-  function onSelectedSlide(id, type) {
+  /*function onSelectedSlide(id, type) {
     console.log("slide added: ", id);
     console.log("slide added array: ", [...slides]);
     console.log("slide details: ", getSlideDetails(id, type));
     /*let updateSlides = [...slides];
     //updateSlides.push({ name: name });
-    //setSlides(updateSlides);*/
+    //setSlides(updateSlides);
 
     setSlides([...slides, getSlideDetails(id, type)]);
 
     //console.log("onSelectedSlide. slides =>: ", slides);
     //console.log("onSelectedSlide. slides.length =>: ", slides.length);
-  }
+  }*/
 
   function getSlideDetails(id, type) {
     console.log("slide details id: ", id);
@@ -133,7 +139,7 @@ function App() {
     }
   }
 
-  function onAddSlideMouseEnter(id) {
+  /*function onAddSlideMouseEnter(id) {
     console.log("On Mouse enter. id =>", id);
     console.log("On Mouse enter. slides =>", slides);
 
@@ -144,9 +150,9 @@ function App() {
     });
 
     setIsAddSlideMenuVisible(true); //delete it - inside slides now
-  }
+  }*/
 
-  function onAddSlideMouseLeave(id) {
+  /*function onAddSlideMouseLeave(id) {
     console.log("On Mouse leave. id =>", id);
 
     slides.map((slide) => {
@@ -156,7 +162,7 @@ function App() {
     });
 
     setIsAddSlideMenuVisible(false); //delete it - inside slides now
-  }
+  }*/
 
   function onResetClick() {
     setSlides([]);
@@ -310,6 +316,13 @@ function App() {
     closePopup();
   }
 
+  function isAddSlideMenuVisible(id) {
+    console.log("isAddSlideMenuVisible. id => ", isAddSlideMenuVisible);
+    slide.value.map((item) => {
+      if (item.id == id) return item.isAddSlideMenuVisible;
+    });
+  }
+
   return (
     <div className="app">
       <main>
@@ -335,11 +348,15 @@ function App() {
         <Slide
           id="slide-0"
           key="slide-0"
-          name="לוגו"
-          onSelectedSlideClick={onSelectedSlide}
-          onAddSlideMouseEnter={onAddSlideMouseEnter}
-          onAddSlideMouseLeave={onAddSlideMouseLeave}
-          isAddSlideMenuVisible={isAddSlideMenuVisible}
+          name="EmptySlide"
+          //onSelectedSlideClick={onSelectedSlide}
+          //onAddSlideMouseEnter={onAddSlideMouseEnter}
+          //onAddSlideMouseLeave={onAddSlideMouseLeave}
+          isAddSlideMenuVisible={() => {
+            console.log("1234--");
+            isAddSlideMenuVisible("");
+            console.log("1234--");
+          }}
         ></Slide>
 
         <div className="app__button-panel">
@@ -350,15 +367,15 @@ function App() {
 
         <div className="app__slides">
           {console.log("(App-View) slides =>", slides)}
-          {slides.map((slide, index) => (
+          {slide.value.map((slide, index) => (
             <Slide
               id={`slide-${index + 1}`}
               key={`slide-${index + 1}`}
               name={slide.name}
-              onSelectedSlideClick={onSelectedSlide}
-              onAddSlideMouseEnter={onAddSlideMouseEnter}
-              onAddSlideMouseLeave={onAddSlideMouseLeave}
-              isAddSlideMenuVisible={slide.isAddSlideMenuVisible}
+              //onSelectedSlideClick={onSelectedSlide}
+              //onAddSlideMouseEnter={onAddSlideMouseEnter}
+              //onAddSlideMouseLeave={onAddSlideMouseLeave}
+              isAddSlideMenuVisible={isAddSlideMenuVisible(`slide-${index + 1}`)}
             >
               <SlideProductPrice
                 id={"product-price-slide-" + index} //remove index from key - put id from DB
