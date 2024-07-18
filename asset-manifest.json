@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/%7BMovieMaker%7D/static/css/main.d6b9bd1f.css",
-    "main.js": "/%7BMovieMaker%7D/static/js/main.3268fa9a.js",
-    "static/media/movie-logo.png": "/%7BMovieMaker%7D/static/media/movie-logo.afc8a3921b4dc9da5db7.png",
-    "static/media/cancel-1.png": "/%7BMovieMaker%7D/static/media/cancel-1.b96743c97076f29edb22.png",
-    "static/media/cancel-2.png": "/%7BMovieMaker%7D/static/media/cancel-2.3325f2e08e5ba681b984.png",
-    "static/media/cup.png": "/%7BMovieMaker%7D/static/media/cup.6be881d464487c67ff47.png",
-    "static/media/product-title-slide.jpg": "/%7BMovieMaker%7D/static/media/product-title-slide.1f4cfeb739491bd9440c.jpg",
-    "static/media/product-price-slide.jpg": "/%7BMovieMaker%7D/static/media/product-price-slide.6763516085dde53122d1.jpg",
-    "static/media/upload-logo.png": "/%7BMovieMaker%7D/static/media/upload-logo.41aa91a70d7d33a6577a.png",
-    "static/media/logo.png": "/%7BMovieMaker%7D/static/media/logo.14bd0a31d0eb74f3c25b.png",
-    "index.html": "/%7BMovieMaker%7D/index.html",
-    "main.d6b9bd1f.css.map": "/%7BMovieMaker%7D/static/css/main.d6b9bd1f.css.map",
-    "main.3268fa9a.js.map": "/%7BMovieMaker%7D/static/js/main.3268fa9a.js.map"
+    "main.css": "/%7BMovieMaker%7D/Frontend/static/css/main.3f8e1e16.css",
+    "main.js": "/%7BMovieMaker%7D/Frontend/static/js/main.127dc10b.js",
+    "static/media/movie-logo.png": "/%7BMovieMaker%7D/Frontend/static/media/movie-logo.afc8a3921b4dc9da5db7.png",
+    "static/media/cancel-1.png": "/%7BMovieMaker%7D/Frontend/static/media/cancel-1.b96743c97076f29edb22.png",
+    "static/media/cancel-2.png": "/%7BMovieMaker%7D/Frontend/static/media/cancel-2.3325f2e08e5ba681b984.png",
+    "static/media/cup.png": "/%7BMovieMaker%7D/Frontend/static/media/cup.6be881d464487c67ff47.png",
+    "static/media/product-title-slide.jpg": "/%7BMovieMaker%7D/Frontend/static/media/product-title-slide.1f4cfeb739491bd9440c.jpg",
+    "static/media/product-price-slide.jpg": "/%7BMovieMaker%7D/Frontend/static/media/product-price-slide.6763516085dde53122d1.jpg",
+    "static/media/upload-logo.png": "/%7BMovieMaker%7D/Frontend/static/media/upload-logo.41aa91a70d7d33a6577a.png",
+    "static/media/logo.png": "/%7BMovieMaker%7D/Frontend/static/media/logo.14bd0a31d0eb74f3c25b.png",
+    "index.html": "/%7BMovieMaker%7D/Frontend/index.html",
+    "main.3f8e1e16.css.map": "/%7BMovieMaker%7D/Frontend/static/css/main.3f8e1e16.css.map",
+    "main.127dc10b.js.map": "/%7BMovieMaker%7D/Frontend/static/js/main.127dc10b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6b9bd1f.css",
-    "static/js/main.3268fa9a.js"
+    "static/css/main.3f8e1e16.css",
+    "static/js/main.127dc10b.js"
   ]
 }
