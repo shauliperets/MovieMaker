@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../Images/logo.png";
+//import logo from "../Images/logo.png";
 import Header from "./Header";
 import Logo from "./Logo/Logo";
 import SelectLogo from "./SelectLogo/SelectLogo";
@@ -22,8 +22,8 @@ import { Open, Close } from "./ColorSet/ColorSetSlice";
 //import { Open, Close } from "./SelectLogo/SelectLogoSlice";
 import { CloseLogo } from "./SelectLogo/SelectLogoSlice";
 
-import SlideSlice from "./Slide/SlideSlice";
-import { AddSlide } from "./Slide/SlideSlice";
+//import SlideSlice from "./Slide/SlideSlice";
+//import { AddSlide } from "./Slide/SlideSlice";
 
 // 1. Add route
 // 2. Use Suspense for lazy loading. Link - https://linguinecode.com/post/code-splitting-react-router-with-react-lazy-and-react-suspense#:~:text=Step%203%3A%20Use%20React%20Suspense%20component
@@ -37,8 +37,10 @@ function App() {
   const [isBackgroundPopupOpen, setIsBackgroundPopupOpen] = React.useState(false);
   const [selectSet, setSelectedSet] = React.useState("Tech");
   const [loadedImage, setLoadedImage] = React.useState(""); //delete
-  const [logo, setLogo] = React.useState(<img className="select-logo__logo" src="./logo.png"></img>); //delete
-  const [popupLogo, setPopupLogo] = React.useState(<img className="popup__logo" src="./logo.png"></img>); //delete
+  const [logo, setLogo] = React.useState(<img className="select-logo__logo" src="./logo.png" alt="Logo"></img>); //delete
+  const [popupLogo, setPopupLogo] = React.useState(
+    <img className="popup__logo" src="./logo.png" alt="Popup Logo"></img>
+  ); //del
   const [logoSource, setLogoSource] = React.useState("./logo.png");
   const [backgroundSource, setBackgroundSource] = React.useState("./image-load.png");
   const [selectSlide, setSelectedSlide] = React.useState("");
@@ -68,19 +70,19 @@ function App() {
 
     const storedSlides = JSON.parse(localStorage.getItem("slides"));
 
-    if (storedSlides.length == null) {
+    /*if (storedSlides.length == null) {
       console.log("storedSlides is null");
     } else if (storedSlides.length == undefined) {
       console.log("storedSlides is undefined");
     } else if (storedSlides.length == 0) {
       console.log("storedSlides is empty string");
-    }
+    }*/
 
-    if (storedSlides.length > 0) {
+    /*if (storedSlides.length > 0) {
       console.log("storedSlides.length > 0. slides =>", storedSlides);
 
       setSlides(storedSlides);
-    }
+    }*/
 
     //setSlides(localStorage.getItem("slides"));
   }, []);
@@ -273,8 +275,8 @@ function App() {
 
     setLoadedImage(URL.createObjectURL(file));
 
-    setLogo(<img className="select-logo__logo" src={URL.createObjectURL(file)}></img>);
-    setPopupLogo(<img className="popup__logo" src={URL.createObjectURL(file)}></img>);
+    setLogo(<img className="select-logo__logo" src={URL.createObjectURL(file)} alt="Logo"></img>);
+    setPopupLogo(<img className="popup__logo" src={URL.createObjectURL(file)} alt="Popup Logo"></img>);
 
     setLogoSource(URL.createObjectURL(file));
 
