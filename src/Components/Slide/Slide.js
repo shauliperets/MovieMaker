@@ -17,7 +17,7 @@ function Slide(props) {
 
   console.log("state.slide => ", slide);
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); //
 
   React.useEffect(() => {
     slide.value.map((item) => {
