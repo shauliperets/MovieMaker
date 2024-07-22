@@ -16,7 +16,7 @@ import { Counter } from "./Counter/Counter";
 
 import { useSelector, useDispatch } from "react-redux";
 
-import { Open, Close } from "./ColorSet/ColorSetSlice";
+import { Close } from "./ColorSet/ColorSetSlice";
 
 //import { SelectLogoActions } from "./SelectLogo/SelectLogoSlice";
 //import { Open, Close } from "./SelectLogo/SelectLogoSlice";
@@ -42,7 +42,7 @@ function App() {
     <img className="popup__logo" src="./logo.png" alt="Popup Logo"></img>
   ); //del
   const [logoSource, setLogoSource] = React.useState("./logo.png");
-  const [backgroundSource, setBackgroundSource] = React.useState("./image-load.png");
+  const [backgroundSource] = React.useState("./image-load.png");
   const [selectSlide, setSelectedSlide] = React.useState("");
   //const [isAddSlideMenuVisible, setIsAddSlideMenuVisible] = React.useState(false);
   const [slideOneProductName, setSlideOneProductName] = React.useState("שם המוצר");
@@ -68,7 +68,7 @@ function App() {
 
     console.log("localStorage: ", localStorage.getItem("slides"));
 
-    const storedSlides = JSON.parse(localStorage.getItem("slides"));
+    //const storedSlides = JSON.parse(localStorage.getItem("slides"));
 
     /*if (storedSlides.length == null) {
       console.log("storedSlides is null");
@@ -118,7 +118,7 @@ function App() {
     //console.log("onSelectedSlide. slides.length =>: ", slides.length);
   }*/
 
-  function getSlideDetails(id, type) {
+  /*function getSlideDetails(id, type) {
     console.log("slide details id: ", id);
     console.log("slide details type: ", type);
 
@@ -139,7 +139,7 @@ function App() {
         isAddSlideMenuVisible: false,
       };
     }
-  }
+  }*/
 
   /*function onAddSlideMouseEnter(id) {
     console.log("On Mouse enter. id =>", id);
@@ -185,10 +185,10 @@ function App() {
       });
   }*/
 
-  function openPopup() {
+  /*function openPopup() {
     //setIsColorSetPopupOpen(true);
     dispatch(Open());
-  }
+  }*/
 
   function closePopup() {
     dispatch(Close());

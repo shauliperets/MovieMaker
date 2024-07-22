@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+//import { useSelector, useDispatch } from "react-redux";
 
 function ColorSet(props) {
   const [colorSet, setColorSet] = React.useState("");
